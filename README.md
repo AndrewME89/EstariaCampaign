@@ -3,6 +3,7 @@
 ## To Do
 
 - [ ] Directly edit HTML files to include working "Back to Dashboard" button (`<button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/';">Back to Dashboard</button>`)
+KompoZer
 - [ ] Look into mobile-friendly functionality (read through the below sites to see if anything works)
   - [ ] https://www.thesitewizard.com/css/mobile-friendly-responsive-design.shtml
   - [ ] https://www.w3schools.com/html/html_responsive.asp
