@@ -10,7 +10,7 @@ KompoZer
 - [ ] Update Template files to include button for future additions
 - [ ] Update template files to include call-out boxes for Quote of the Game, Lore, Quotes & Encounters - rather delete them than have to go back and add them
 - [x] ~~(NOPE) See if Leaflet functionality remains in HTML export~~
-- [x] Get a copy of the map and some info as to where the party has been for map pins
+- [ ] Get a copy of the map and some info as to where the party has been for map pins
 - [ ] Remove unnecessary buttons from Homepage
 - [ ] Update letters
 - [ ] add "Quote of the Game" call-out
