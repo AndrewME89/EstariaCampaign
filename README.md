@@ -9,6 +9,6 @@ KompoZer
   - [ ] https://www.w3schools.com/html/html_responsive.asp
   - [ ] https://www.w3schools.com/html/default.asp _**(Just generally read this one, but focus on "Responsive Web Design" section)**_ 
 - [ ] Update Template files to include button for future additions
-- [ ] See if Leaflet functionality remains in HTML export
-- [ ] If above works, ask Shelby for the map and some info as to where the party has been for map pins
+- [x] (NOPE) See if Leaflet functionality remains in HTML export
+- [x] If above works, ask Shelby for the map and some info as to where the party has been for map pins
 - [ ] Remove unnecessary buttons from Homepage
