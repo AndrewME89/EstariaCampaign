@@ -13,10 +13,10 @@
 - [ ] Update template files to include call-out boxes for Quote of the Game, Lore, Quotes & Encounters - rather delete them than have to go back and add them
 - [x] ~~(NOPE) See if Leaflet functionality remains in HTML export~~
 - [ ] Get a copy of the map and some info as to where the party has been for map pins
-- [x] Remove unnecessary buttons from the Homepage
-- [x] Update letters
+- [x] ~~Remove unnecessary buttons from the Homepage~~
+- [x] ~~Update letters~~
 - [ ] Add "Quote of the Game" call-out
-- [x] Fix Quote, Encounter & Lore call-outs
-- [x] Go through notes about changes
-- [x] General spelling & grammar check
-- [x] Remove To Do list link
+- [x] ~~Fix Quote, Encounter & Lore call-outs~~
+- [x] ~~Go through notes about changes~~
+- [x] ~~General spelling & grammar check~~
+- [x] ~~Remove To Do list link~~
