@@ -22,3 +22,4 @@
 - [x] ~~General spelling & grammar check~~
 - [x] ~~Remove To Do list link~~
 - [ ] Add `<br><br><br><br><br>` to the end of each file for some space
+- [ ] Find a way to test if adding `<meta name="viewport" content="width=device-width, initial-scale=1.0">` to the head of the HTML file works
