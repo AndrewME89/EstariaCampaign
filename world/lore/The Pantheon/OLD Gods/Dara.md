@@ -1,1 +1,0 @@
-*Names the other Gods*
