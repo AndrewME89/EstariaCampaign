@@ -23,3 +23,4 @@
 - [x] ~~Remove To Do list link~~
 - [x] ~~Add `<br><br><br><br><br>` to the end of each file for some space~~
 - [x] ~~Find a way to test if adding `<meta name="viewport" content="width=device-width, initial-scale=1.0">` to the head of the HTML file works~~
+- [ ] Update buttons for world and session notes (`<button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/world/world.html';">World</button>`) & (`<button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/session-notes/session-notes.html';">Session Notes</button>`)
