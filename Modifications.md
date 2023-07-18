@@ -49,10 +49,10 @@
 #### Paste this _**Check how this functions with the updated style.css before proceeding**_
 
 	<!-- Top Nav Style -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">`
 				
 	<!-- Top Nav Style -->	
-<style>
+`<style>
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -108,4 +108,4 @@ body {
     text-align: left;
   }
 }
-</style>
+</style>`
