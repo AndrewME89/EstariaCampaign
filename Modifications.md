@@ -4,23 +4,23 @@
 
 Remove
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+	`<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">`
 
 Replace with
 
-	<link rel="stylesheet" href="style.css">
+	`<link rel="stylesheet" href="style.css">`
 
 ## Icon
 
-	<link rel="icon" sizes="96x96" href="https://andrewme89.github.io/EstariaCampaign/android-chrome-192x192.png">
+	`<link rel="icon" sizes="96x96" href="https://andrewme89.github.io/EstariaCampaign/android-chrome-192x192.png">`
 
 ## NavBar
 
 ### In the <head> of the file:
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">`
 
-<style>
+`<style>
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -76,11 +76,13 @@ body {
     text-align: left;
   }
 }
-</style>
+</style>`
 
-### In the <body> of the file:
+### In the `<body>` of the file:
 
-<div class="topnav" id="myTopnav">
+#### At the top
+
+`<div class="topnav" id="myTopnav">
   <a href="https://andrewme89.github.io/EstariaCampaign/" class="active">Back to Dashboard</a>
   <a href="https://andrewme89.github.io/EstariaCampaign/session-notes/session-notes.html">Session Notes</a>
   <a href="https://andrewme89.github.io/EstariaCampaign/world/world.html">World</a>
@@ -88,9 +90,11 @@ body {
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-</div>
+</div>`
 
-<script>
+#### Anywhere
+
+`<script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -99,15 +103,15 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-</script>
+</script>`
 
 ## Sidebar buttons
 
 ### In this element:
 
-<div class="tree-scroll-area">_____</div>
+`<div class="tree-scroll-area">_____</div>`
 
-### Add this
+### Replace existing with this:
 					<button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/';">Back to Dashboard</button>
 					<br>
 					<br>
