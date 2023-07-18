@@ -12,13 +12,35 @@
 
 ## Icon
 
-	<link rel="icon" sizes="96x96" href="https://andrewme89.github.io/EstariaCampaign/android-chrome-192x192.png">
+	<link rel="icon" sizes="96x96" href="https://andrewme89.github.io/EstariaCampaign/estaria-logo.png">
+
+## Sidebar buttons
+
+### Search this:
+
+`<div class="tree-scroll-area">`(.+)`<div class="tree-item-children">``</div>`
+            `</div>`
+          `</div>`
+
+### Replace with this:
+
+          <div class="tree-scroll-area">\n		  <button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/';">Back to Dashboard</button>\n		  <br>\n		  <br>\n		  <button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/session-notes/session-notes.html';">Session Notes</button>\n		  <br>\n     		  <br>\n     		  <button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/world/world.html';">World</button>\n		  <br>\n		  <br>\n		  <button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/npc-database.html';">NPC Database</button>\n		  </div>
 
 ## NavBar
 
 ### In the `<head>` of the file:
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="lib/styles/font-awesome.min.css">
+
+### In the `<body>` of the file:
+
+#### Search this
+
+	<div class="mod-header"></div>
+
+#### Replace with this
+
+	<div class="mod-header">\n	<!-- Top Nav -->\n	<div class="topnav" id="myTopnav">\n	  <a href="https://andrewme89.github.io/EstariaCampaign/" class="active">Back to Dashboard</a>\n	  <a href="https://andrewme89.github.io/EstariaCampaign/session-notes/session-notes.html">Session Notes</a>\n	  <a href="https://andrewme89.github.io/EstariaCampaign/world/world.html">World</a>\n	  <a href="https://andrewme89.github.io/EstariaCampaign/npc-database.html">NPC Database</a>\n	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">\n	    <i class="fa fa-bars"></i>\n	  </a>\n	</div>\n	\n	<!-- Top Nav SCRIPT -->\n	<script>\n	function myFunction() {\n	  var x = document.getElementById("myTopnav");\n	  if (x.className === "topnav") {\n	    x.className += " responsive";\n	  } else {\n	    x.className = "topnav";\n	  }\n	}\n	</script>\n	</div>\n
 
 #### After this
 
@@ -87,25 +109,3 @@ body {
   }
 }
 </style>
-
-### In the `<body>` of the file:
-
-#### Search this
-
-	<div class="mod-header"></div>
-
-#### Replace with this
-
-	<div class="mod-header">\n	<!-- Top Nav -->\n	<div class="topnav" id="myTopnav">\n	  <a href="https://andrewme89.github.io/EstariaCampaign/" class="active">Back to Dashboard</a>\n	  <a href="https://andrewme89.github.io/EstariaCampaign/session-notes/session-notes.html">Session Notes</a>\n	  <a href="https://andrewme89.github.io/EstariaCampaign/world/world.html">World</a>\n	  <a href="https://andrewme89.github.io/EstariaCampaign/npc-database.html">NPC Database</a>\n	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">\n	    <i class="fa fa-bars"></i>\n	  </a>\n	</div>\n	\n	<!-- Top Nav SCRIPT -->\n	<script>\n	function myFunction() {\n	  var x = document.getElementById("myTopnav");\n	  if (x.className === "topnav") {\n	    x.className += " responsive";\n	  } else {\n	    x.className = "topnav";\n	  }\n	}\n	</script>\n	</div>\n
-
-## Sidebar buttons
-
-### Search this:
-
-`<div class="tree-scroll-area">`(.+)`<div class="tree-item-children">``</div>`
-            `</div>`
-          `</div>`
-
-### Replace with this:
-
-          <div class="tree-scroll-area">\n		  <button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/';">Back to Dashboard</button>\n		  <br>\n		  <br>\n		  <button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/session-notes/session-notes.html';">Session Notes</button>\n		  <br>\n     		  <br>\n     		  <button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/world/world.html';">World</button>\n		  <br>\n		  <br>\n		  <button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/npc-database.html';">NPC Database</button>\n		  </div>
