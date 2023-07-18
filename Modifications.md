@@ -20,13 +20,73 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-#### Search this
+#### After this
 
-	<meta charset="UTF-8">$
+	<meta charset="UTF-8">
 
-#### Replace with this
+#### Paste this _**Check how this functions with the updated style.css before proceeding**_
 
-	<meta charset="UTF-8">\n<style>\n body {\n  margin: 0;\n  font-family: Arial, Helvetica, sans-serif;\n }\n \n .topnav {\n  overflow: hidden;\n  background-color: #333;\n }\n \n .topnav a {\n  float: left;\n  display: none;\n  color: #f2f2f2;\n  text-align: center;\n  padding: 14px 16px;\n  text-decoration: none;\n  font-size: 17px;\n}\n\n.topnav a:hover {\n  background-color: #ddd;\n  color: black;\n}\n\n.topnav a.active {\n  background-color: #863737;\n  color: white;\n}\n\n.topnav .icon {\n  display: none;\n}\n\n@media screen and (max-width: 600px) {\n  .topnav a:not(:first-child) {display: none;}\n  .topnav a.icon {\n    float: right;\n    display: block;\n  }\n}\n\n@media screen and (max-width: 600px) {\n  .topnav.responsive {position: relative;}\n  .topnav.responsive .icon {\n    position: absolute;\n    right: 0;\n    top: 0;\n  }\n  .topnav.responsive a {\n    float: none;\n    display: block;\n    text-align: left;\n  }\n}\n</style>\n
+	<!-- Top Nav Style -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				
+	<!-- Top Nav Style -->	
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: none;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #863737;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
 
 ### In the `<body>` of the file:
 
