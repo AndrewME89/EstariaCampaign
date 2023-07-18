@@ -9,7 +9,7 @@
 - [x] ~~Update Template files to include the "Back to Dashboard" button for future additions~~
 - [x] ~~Look into mobile-friendly functionality (read through the below sites to see if anything works)~~
   - [x] ~~https://www.thesitewizard.com/css/mobile-friendly-responsive-design.shtml~~
-  - [x] ~https://www.w3schools.com/html/default.asp _**(Just generally read this one, but focus on "Responsive Web Design" section)**_~~
+  - [x] ~~https://www.w3schools.com/html/default.asp _**(Just generally read this one, but focus on "Responsive Web Design" section)**_~~
 - [x] ~~Directly edit HTML files to include the working "Back to Dashboard" button (`<button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/';">Back to Dashboard</button>`)~~
 - [x] ~~Directly edit HTML files to include the working "Session Notes" button (`<button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/session-notes.html';">Session Notes</button>`)~~
 - [x] ~~Directly edit HTML files to include the working "World" button (`<button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/world.html';">World</button>`)~~
