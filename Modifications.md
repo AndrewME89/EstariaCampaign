@@ -42,9 +42,9 @@
 
 ### Search this:
 
-<div class="tree-scroll-area">(.+)<div class="tree-item-children"></div>
-            </div>
-          </div>
+`<div class="tree-scroll-area">`(.+)`<div class="tree-item-children">``</div>`
+            `</div>`
+          `</div>`
 
 ### Replace with this:
 
