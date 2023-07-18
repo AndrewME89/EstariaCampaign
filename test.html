@@ -1,17 +1,14 @@
+<!DOCTYPE html>
 <html>
 <head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-	body {
+body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-	@media only screen and (min-width: 680px) {
-	  .hide-pc {
-		display:none;
-	  }
-	}
+
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -19,7 +16,7 @@
 
 .topnav a {
   float: left;
-  display: block;
+  display: none;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -33,13 +30,29 @@
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #863737;
   color: white;
 }
 
 .topnav .icon {
   display: none;
 }
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
   .topnav.responsive a {
     float: none;
     display: block;
@@ -49,13 +62,12 @@
 </style>
 </head>
 <body>
-<h3>This is how to hide element on PC but show it on Mobile.</h3>
-<p class="hide-pc">This text should be displayed on your PC or screen size larger than 600px. If yo use your mobile device or screen size smaller than 600px then you won't see this text.</p>
+
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+  <a href="https://andrewme89.github.io/EstariaCampaign/" class="active">Back to Dashboard</a>
+  <a href="https://andrewme89.github.io/EstariaCampaign/session-notes/session-notes.html">Session Notes</a>
+  <a href="https://andrewme89.github.io/EstariaCampaign/world/world.html">World</a>
+  <a href="https://andrewme89.github.io/EstariaCampaign/npc-database.html">NPC Database</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
@@ -71,5 +83,6 @@ function myFunction() {
   }
 }
 </script>
+
 </body>
 </html>
