@@ -8,7 +8,7 @@
 
 ### Replace with this
 
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="lib/styles/style.css">
 
 ## Icon
 
