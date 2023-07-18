@@ -1,6 +1,6 @@
 # List of modifications needed for each file to work online
 
-## Phone functionality
+## Phone Functionality
 
 ### Search this
 
@@ -18,7 +18,7 @@
 
 ### Search this:
 
-`<div class="tree-scroll-area">`(.+)`<div class="tree-item-children">``</div>`
+`<div class="tree-scroll-area">`(.+)`<div class="tree-item-children"></div>`
             `</div>`
           `</div>`
 
