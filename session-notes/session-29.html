@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Session 29</title>
+  <base href="../">
+  <meta id="root-path" root-path="../">
+
+  <link rel="icon" sizes="96x96" href="https://andrewme89.github.io/EstariaCampaign/estaria-logo.png">
+  <link rel="stylesheet" href="lib/styles/style.css">
+  <meta charset="UTF-8">
+<!-- Top Nav Style -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link rel="stylesheet" href="lib/styles/obsidian-styles.css">
+  <link rel="stylesheet" href="lib/styles/theme.css">
+  <link rel="stylesheet" href="lib/styles/plugin-styles.css">
+  <link rel="stylesheet" href="lib/styles/snippets.css">
+  <style>
+    body.css-settings-manager {}
+
+    body.theme-light.css-settings-manager {}
+
+    body.theme-dark.css-settings-manager {}
+  </style>
+
+
+  <!-- Graph View Data -->
+  <script>
+    let nodes = {
+      "nodeCount": 220,
+      "linkCount": 573,
+      "radii": [7, 7, 6.984375, 6.930362654320987, 6.930362654320987, 6.837770061728395, 6.777006172839506, 6.777006172839506, 6.777006172839506, 6.777006172839506, 6.706597222222222, 6.706597222222222, 6.626543209876543, 6.536844135802468, 6.536844135802468, 6.4375, 6.4375, 6.328510802469136, 6.328510802469136, 6.328510802469136, 6.328510802469136, 6.328510802469136, 6.328510802469136, 6.209876543209877, 6.081597222222222, 6.081597222222222, 6.081597222222222, 6.081597222222222, 5.943672839506172, 5.943672839506172, 5.943672839506172, 5.796103395061729, 5.796103395061729, 5.796103395061729, 5.796103395061729, 5.472029320987654, 5.472029320987654, 5.472029320987654, 5.472029320987654, 5.472029320987654, 5.2955246913580245, 5.2955246913580245, 5.2955246913580245, 5.2955246913580245, 5.2955246913580245, 5.109375, 5.109375, 5.109375, 5.109375, 4.708140432098766, 4.708140432098766, 4.708140432098766, 4.708140432098766, 4.708140432098766, 4.708140432098766, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.268325617283951, 4.268325617283951, 4.268325617283951, 4.268325617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+      "labels": ["Session 29", "Session 23", "Session 25", "Twiggy 🌳", "Miraren 🧝‍♂️", "Ridley 🦁", "Suda", "Goodie 💖", "Kindle 🔥", "Session 13", "Session 28", "Session 10", "Tabitha 💀", "Session 21", "Session 03", "The Pale Valley", "Olo ☠", "Celia 🏴‍☠️", "The Great Black", "Session 24", "Session 11", "Session 09", "Session 06", "Session 18", "Loravor 😡", "Session 22", "Session 14", "Session 04", "Balor", "Amal 🐍", "Camp Lockheart", "Evangeline", "Tolak", "Alabi", "Session 08", "Session 27", "Session 20", "Session 17", "Session 07", "Session 05", "The Garnet Hand", "Goodie's Convenience 🛒", "Mesta 🏹", "Session 26", "Session 19", "Silda", "Session 16", "Session 12", "Session 02", "Iravek", "Alaad", "Zoran 🗡", "Kelrock 🐲", "Atlas 🌓", "Session 15", "Donelle Family", "Tani", "Fact & Fiction 📚", "Onierr 🌊", "Marralee 😈", "Jasper Family", "Sapphire", "Sedvioth Crofkeve 🧥", "Poggin 🐉", "World", "Kracka", "Sable Guards", "The Hot Candle 🍺", "The Colossal Lily Inn 🍺", "Ziliir", "Ginny 🐢", "Belzen", "Namid 🌒", "Dara ✨", "Fantasy Fireball 🥃", "Gem of Twiggy Travel 💎", "Custom Bag of Holding ⭐", "Dancing Fire", "The Dragon Aspect 💫", "By Hammer & Hand 🔨", "Zaarea", "Expresso Yourself 🍺", "Marius", "Elf Ranger Plushie 🎯", "Leonin Plushie 🦁", "Jar of Flesh-coloured Goo 🏺", "Realistic Heart Plushie 💜", "Mushroom Plushie 🍄", "Bard Plushie 🎸", "Ponyta-style Plushie 🐎", "Wooden Pan Flute 🎺", "Small Bag of Translucent Dust 👝", "Unicorn Horn Filled with Candy 🦄", "Spider Toy 🕷", "Tree Plushie 🎋", "Elegant Spoon 🥄", "Parasol 🌂", "Face Paint 🎨", "Avocado Plushie 🥑", "Star Plushie ⭐", "Empty bag labelled 'Candy' 🍬", "Recreated map, circa 2156, Constellation Dynasty 🌍", "Ancient Coin, circa 2156, Constellation Dynasty 💰", "Session 01", "Cult of the Yellow Flame", "Araou", "Akai", "Captain Bellows", "Lanryn Pimplemimple Magicman Sparklestaff III", "Gregory", "The Golden Dragon 🍺", "The Dirty Wagon 🛒", "Durand Family", "Carnis", "Garnet", "High Hall 🏫", "Iriad", "Queen Odael", "Viisa", "Sotan ⚔", "Meri 💦", "Ola", "Longbow", "Inventory Ledger, dated 2156, Constellation Dynasty 📖", "Gem of Horse Eating 💎", "Gem of Cart Consuming 💎", "Letter From V. G. T.", "The Sunset Carnival 🎪", "Sutar", "Akengenua", "Raylana", "Pirates of Golden Banner", "Any Cash, Any Time, inc 🛒", "Light Bearers", "Adelin", "Amal’s Son", "Malen", "Hammer", "Clung", "The Timid Willow Tavern 🍺", "Shrugging Carpet 🐄", "Hag’s Pot Inn 🍺", "Rotnar Reach", "Alora", "Doven", "Jules", "Unnamed 🛒", "The Grumpy Duck 🛒", "Coldstone 🔨", "The Dominion of Kagal", "Pori", "Horoscopes & Horoscopes 💫", "Kiana 😍", "Glide", "Amon", "Mark My Words 📚", "Stormy Windmill 🪓", "Bitterfrost Bar 🍺", "Metes & Bounds 🌍", "Knitwit 🛒", "Vision 6", "Vision 3", "Vision 2", "Vision 1", "Kamen", "Estiva", "Potion of Healing", "Pearl of Power 🦪", "Cloak of  Protection 👘", "Goggles of Night 🥽", "Boots of Elvenkind 👢", "Note to Orphan Kids", "Note from the Party", "Letter from Zaarea", "Letter to Celia", "Letter to the Party", "Letter to Amal", "Ludovicus 🕊", "Index", "NPC Database", "Golden Banner Jail 🚓", "The Suffered", "The Watchers", "Everette Family", "Dollar Store 🛒", "Hot Stuff 🔨", "NPCs", "Lore", "Vision 7", "Vision 4", "Vision 5", "Murhas", "Alus", "Wiest", "Lorne", "Lohika", "Hullu", "Petos", "Tempu", "Sato", "Sydan", "Perha", "Surge", "Muto", "Onnea 🍀", "Taika", "Autio", "Rayin", "Vark", "Kar", "Primas", "Iuvos", "Letter to Tabitha", "Ancient Note", "Ridley's Book 📔", "Map of Tolak", "Twiggy Storage", "Custom Bag of Holding", "Horse & Cart Storage", "Session Notes"],
+      "paths": ["session-notes/session-29.html", "session-notes/session-23.html", "session-notes/session-25.html", "world/lore/twiggy-🌳.html", "players/miraren-🧝‍♂️.html", "players/ridley-🦁.html", "world/continents/alabi/towns/suda/suda.html", "world/npcs/goodie-💖.html", "players/kindle-🔥.html", "session-notes/session-13.html", "session-notes/session-28.html", "session-notes/session-10.html", "players/tabitha-💀.html", "session-notes/session-21.html", "session-notes/session-03.html", "world/continents/tolak/towns/the-pale-valley/the-pale-valley.html", "world/lore/the-pantheon/olo-☠.html", "world/continents/tolak/towns/balor/npcs/celia-🏴‍☠️.html", "world/continents/tolak/towns/the-great-black/the-great-black.html", "session-notes/session-24.html", "session-notes/session-11.html", "session-notes/session-09.html", "session-notes/session-06.html", "session-notes/session-18.html", "world/continents/tolak/towns/the-great-black/npcs/loravor-😡.html", "session-notes/session-22.html", "session-notes/session-14.html", "session-notes/session-04.html", "world/continents/tolak/towns/balor/balor.html", "world/continents/tolak/towns/the-great-black/npcs/amal-🐍.html", "world/continents/tolak/towns/camp-lockheart/camp-lockheart.html", "world/continents/tolak/towns/the-pale-valley/npcs/evangeline.html", "world/continents/tolak/tolak.html", "world/continents/alabi/alabi.html", "session-notes/session-08.html", "session-notes/session-27.html", "session-notes/session-20.html", "session-notes/session-17.html", "session-notes/session-07.html", "session-notes/session-05.html", "world/guilds-&-organisations/the-garnet-hand.html", "world/continents/tolak/towns/the-great-black/locations/goodie's-convenience-🛒.html", "world/lore/the-pantheon/mesta-🏹.html", "session-notes/session-26.html", "session-notes/session-19.html", "world/continents/tolak/towns/balor/npcs/silda.html", "session-notes/session-16.html", "session-notes/session-12.html", "session-notes/session-02.html", "world/continents/tolak/towns/the-great-black/npcs/iravek.html", "world/continents/tolak/towns/the-great-black/npcs/alaad.html", "world/continents/tolak/towns/the-great-black/npcs/zoran-🗡.html", "world/continents/tolak/towns/the-pale-valley/npcs/kelrock-🐲.html", "world/npcs/atlas-🌓.html", "session-notes/session-15.html", "world/continents/tolak/towns/the-great-black/guilds-&-groups/donelle-family.html", "world/continents/tolak/towns/the-great-black/npcs/tani.html", "world/continents/tolak/towns/the-pale-valley/locations/fact-&-fiction-📚.html", "world/lore/the-pantheon/old-gods/onierr-🌊.html", "players/marralee-😈.html", "world/continents/tolak/towns/the-great-black/guilds-&-groups/jasper-family.html", "world/continents/tolak/towns/the-great-black/npcs/sapphire.html", "world/continents/alabi/sedvioth-crofkeve-🧥.html", "pets-&-familiars/poggin-🐉.html", "world/world.html", "world/continents/tolak/towns/balor/npcs/kracka.html", "world/continents/tolak/towns/the-great-black/guilds-&-groups/sable-guards.html", "world/continents/tolak/towns/the-great-black/locations/the-hot-candle-🍺.html", "world/continents/tolak/towns/the-pale-valley/locations/the-colossal-lily-inn-🍺.html", "world/continents/tolak/towns/camp-lockheart/npcs/ziliir.html", "world/continents/tolak/towns/camp-lockheart/npcs/ginny-🐢.html", "world/continents/alabi/towns/suda/npcs/belzen.html", "world/lore/the-pantheon/old-gods/namid-🌒.html", "world/lore/the-pantheon/old-gods/dara-✨.html", "party-holdings/fantasy-fireball-🥃.html", "party-holdings/gem-of-twiggy-travel-💎.html", "party-holdings/custom-bag-of-holding-⭐.html", "world/continents/tolak/towns/the-great-black/npcs/dancing-fire.html", "world/continents/tolak/towns/the-great-black/locations/the-dragon-aspect-💫.html", "world/continents/tolak/towns/the-great-black/locations/by-hammer-&-hand-🔨.html", "world/continents/tolak/towns/the-pale-valley/npcs/zaarea.html", "world/continents/tolak/towns/camp-lockheart/locations/expresso-yourself-🍺.html", "world/continents/alabi/towns/suda/npcs/marius.html", "party-holdings/elf-ranger-plushie-🎯.html", "party-holdings/leonin-plushie-🦁.html", "party-holdings/jar-of-flesh-coloured-goo-🏺.html", "party-holdings/realistic-heart-plushie-💜.html", "party-holdings/mushroom-plushie-🍄.html", "party-holdings/bard-plushie-🎸.html", "party-holdings/ponyta-style-plushie-🐎.html", "party-holdings/wooden-pan-flute-🎺.html", "party-holdings/small-bag-of-translucent-dust-👝.html", "party-holdings/unicorn-horn-filled-with-candy-🦄.html", "party-holdings/spider-toy-🕷.html", "party-holdings/tree-plushie-🎋.html", "party-holdings/elegant-spoon-🥄.html", "party-holdings/parasol-🌂.html", "party-holdings/face-paint-🎨.html", "party-holdings/avocado-plushie-🥑.html", "party-holdings/star-plushie-⭐.html", "party-holdings/empty-bag-labelled-'candy'-🍬.html", "party-holdings/recreated-map,-circa-2156,-constellation-dynasty-🌍.html", "party-holdings/ancient-coin,-circa-2156,-constellation-dynasty-💰.html", "session-notes/session-01.html", "world/guilds-&-organisations/cult-of-the-yellow-flame.html", "world/continents/araou/araou.html", "world/continents/akai/akai.html", "world/continents/tolak/towns/balor/npcs/captain-bellows.html", "world/continents/tolak/towns/balor/npcs/lanryn-pimplemimple-magicman-sparklestaff-iii.html", "world/continents/tolak/towns/balor/npcs/gregory.html", "world/continents/tolak/towns/balor/locations/the-golden-dragon-🍺.html", "world/continents/tolak/towns/balor/locations/the-dirty-wagon-🛒.html", "world/continents/tolak/towns/the-great-black/guilds-&-groups/durand-family.html", "world/continents/tolak/towns/the-great-black/npcs/carnis.html", "world/continents/tolak/towns/the-great-black/npcs/garnet.html", "world/continents/tolak/towns/the-great-black/locations/high-hall-🏫.html", "world/continents/tolak/towns/camp-lockheart/npcs/iriad.html", "world/continents/alabi/queen-odael.html", "world/lore/the-pantheon/viisa.html", "world/lore/the-pantheon/sotan-⚔.html", "world/lore/the-pantheon/meri-💦.html", "world/lore/the-pantheon/ola.html", "party-holdings/longbow.html", "party-holdings/inventory-ledger,-dated-2156,-constellation-dynasty-📖.html", "party-holdings/gem-of-horse-eating-💎.html", "party-holdings/gem-of-cart-consuming-💎.html", "letters/letter-from-v-g.-t..html", "world/guilds-&-organisations/the-sunset-carnival-🎪.html", "world/continents/araou/towns/sutar.html", "world/continents/akai/akengenua.html", "world/continents/tolak/raylana.html", "world/continents/tolak/towns/balor/pirates-of-golden-banner.html", "world/continents/tolak/towns/balor/locations/any-cash,-any-time,-inc-🛒.html", "world/continents/tolak/towns/the-great-black/guilds-&-groups/light-bearers.html", "world/continents/tolak/towns/the-great-black/npcs/adelin.html", "world/continents/tolak/towns/the-great-black/npcs/amal’s-son.html", "world/continents/tolak/towns/the-great-black/npcs/malen.html", "world/continents/tolak/towns/the-great-black/npcs/hammer.html", "world/continents/tolak/towns/the-great-black/npcs/clung.html", "world/continents/tolak/towns/the-great-black/locations/the-timid-willow-tavern-🍺.html", "world/continents/tolak/towns/the-great-black/locations/shrugging-carpet-🐄.html", "world/continents/tolak/towns/the-great-black/locations/hag’s-pot-inn-🍺.html", "world/continents/tolak/towns/rotnar-reach/rotnar-reach.html", "world/continents/tolak/towns/the-pale-valley/npcs/alora.html", "world/continents/tolak/towns/the-pale-valley/npcs/doven.html", "world/continents/tolak/towns/camp-lockheart/npcs/jules.html", "world/continents/tolak/towns/camp-lockheart/locations/unnamed-🛒.html", "world/continents/tolak/towns/camp-lockheart/locations/the-grumpy-duck-🛒.html", "world/continents/tolak/towns/camp-lockheart/locations/coldstone-🔨.html", "world/continents/alabi/towns/the-dominion-of-kagal/the-dominion-of-kagal.html", "world/continents/alabi/towns/pori/pori.html", "world/continents/alabi/towns/pori/merchants/horoscopes-&-horoscopes-💫.html", "world/continents/alabi/towns/suda/npcs/kiana-😍.html", "world/continents/alabi/towns/suda/npcs/glide.html", "world/continents/alabi/towns/suda/npcs/amon.html", "world/continents/alabi/towns/suda/merchants/mark-my-words-📚.html", "world/continents/alabi/towns/suda/merchants/stormy-windmill-🪓.html", "world/continents/alabi/towns/suda/merchants/bitterfrost-bar-🍺.html", "world/continents/alabi/towns/suda/merchants/metes-&-bounds-🌍.html", "world/continents/alabi/towns/suda/merchants/knitwit-🛒.html", "world/lore/visions-of-tolak/vision-6.html", "world/lore/visions-of-tolak/vision-3.html", "world/lore/visions-of-tolak/vision-2.html", "world/lore/visions-of-tolak/vision-1.html", "world/lore/the-pantheon/kamen.html", "world/lore/the-pantheon/estiva.html", "party-holdings/potion-of-healing.html", "party-holdings/pearl-of-power-🦪.html", "party-holdings/cloak-of-protection-👘.html", "party-holdings/goggles-of-night-🥽.html", "party-holdings/boots-of-elvenkind-👢.html", "letters/note-to-orphan-kids.html", "letters/note-from-the-party.html", "letters/letter-from-zaarea.html", "letters/letter-to-celia.html", "letters/letter-to-the-party.html", "letters/letter-to-amal.html", "pets-&-familiars/ludovicus-🕊.html", "index.html", "npc-database.html", "world/continents/tolak/towns/balor/locations/golden-banner-jail-🚓.html", "world/continents/tolak/towns/the-great-black/guilds-&-groups/the-suffered.html", "world/continents/tolak/towns/the-great-black/guilds-&-groups/the-watchers.html", "world/continents/tolak/towns/the-great-black/guilds-&-groups/everette-family.html", "world/continents/tolak/towns/the-pale-valley/locations/dollar-store-🛒.html", "world/continents/tolak/towns/the-pale-valley/locations/hot-stuff-🔨.html", "world/npcs/npcs.html", "world/lore/lore.html", "world/lore/visions-of-tolak/vision-7.html", "world/lore/visions-of-tolak/vision-4.html", "world/lore/visions-of-tolak/vision-5.html", "world/lore/the-pantheon/murhas.html", "world/lore/the-pantheon/alus.html", "world/lore/the-pantheon/wiest.html", "world/lore/the-pantheon/lorne.html", "world/lore/the-pantheon/lohika.html", "world/lore/the-pantheon/hullu.html", "world/lore/the-pantheon/petos.html", "world/lore/the-pantheon/tempu.html", "world/lore/the-pantheon/sato.html", "world/lore/the-pantheon/sydan.html", "world/lore/the-pantheon/perha.html", "world/lore/the-pantheon/surge.html", "world/lore/the-pantheon/muto.html", "world/lore/the-pantheon/onnea-🍀.html", "world/lore/the-pantheon/taika.html", "world/lore/the-pantheon/autio.html", "world/lore/the-pantheon/rayin.html", "world/lore/the-pantheon/vark.html", "world/lore/the-pantheon/kar.html", "world/lore/the-pantheon/primas.html", "world/lore/the-pantheon/iuvos.html", "letters/letter-to-tabitha.html", "letters/ancient-note.html", "pets-&-familiars/ridley's-book-📔.html", "service-requests/map-of-tolak.html", "service-requests/twiggy-storage.html", "service-requests/custom-bag-of-holding.html", "service-requests/horse-&-cart-storage.html", "session-notes/session-notes.html"],
+      "linkSources": [178, 126, 173, 172, 171, 102, 76, 125, 124, 75, 75, 123, 101, 103, 103, 103, 48, 48, 48, 48, 48, 48, 48, 48, 48, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 47, 47, 47, 47, 47, 47, 47, 47, 47, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 54, 54, 54, 54, 54, 54, 54, 46, 46, 46, 46, 46, 46, 46, 46, 46, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 117, 71, 71, 28, 28, 17, 17, 17, 17, 17, 65, 65, 45, 45, 45, 30, 30, 30, 70, 116, 145, 55, 55, 55, 112, 112, 60, 60, 60, 66, 41, 50, 29, 29, 138, 77, 137, 49, 24, 56, 51, 51, 31, 80, 40, 40, 40, 40, 40, 58, 58, 58, 58, 58, 3, 3, 3, 3, 3, 3, 3, 160, 53, 7, 7, 7, 7, 64, 64, 64, 64, 100, 100, 99, 99, 98, 98, 97, 97, 96, 96, 95, 95, 94, 94, 93, 93, 92, 92, 91, 91, 90, 90, 89, 89, 88, 88, 87, 87, 86, 86, 85, 85, 84, 84, 74, 74, 74, 83, 83],
+      "linkTargets": [109, 17, 52, 68, 110, 15, 7, 7, 7, 7, 3, 15, 15, 141, 56, 12, 8, 66, 12, 4, 114, 61, 79, 67, 56, 56, 77, 134, 140, 28, 45, 65, 66, 115, 175, 29, 15, 67, 8, 49, 24, 55, 31, 4, 49, 24, 31, 41, 15, 7, 67, 29, 50, 77, 32, 8, 4, 12, 163, 49, 24, 31, 30, 15, 4, 8, 3, 161, 12, 16, 49, 24, 31, 12, 30, 69, 4, 81, 70, 116, 8, 3, 146, 148, 42, 32, 15, 69, 31, 30, 5, 42, 32, 8, 70, 12, 15, 162, 49, 24, 31, 15, 12, 4, 8, 5, 121, 119, 68, 30, 16, 49, 24, 31, 80, 15, 4, 57, 68, 5, 52, 8, 12, 16, 51, 18, 29, 30, 80, 31, 15, 24, 12, 41, 16, 8, 4, 5, 57, 50, 29, 55, 51, 18, 52, 63, 3, 30, 68, 52, 3, 32, 5, 12, 16, 4, 8, 57, 41, 7, 18, 60, 61, 143, 42, 144, 8, 4, 5, 122, 12, 40, 16, 18, 3, 5, 8, 51, 31, 18, 24, 52, 7, 61, 29, 76, 4, 12, 16, 42, 3, 123, 102, 57, 41, 63, 101, 76, 7, 4, 41, 71, 33, 102, 3, 17, 28, 5, 151, 150, 101, 16, 4, 57, 5, 12, 53, 7, 16, 16, 12, 4, 8, 5, 3, 53, 63, 30, 16, 5, 8, 4, 7, 30, 69, 17, 28, 18, 29, 30, 15, 127, 5, 41, 7, 70, 4, 33, 12, 16, 81, 3, 42, 18, 29, 29, 18, 5, 104, 7, 3, 30, 32, 28, 31, 31, 52, 24, 78, 5, 4, 29, 3, 12, 16, 104, 29, 24, 4, 177, 176, 51, 61, 60, 28, 50, 136, 119, 8, 106, 129, 78, 5, 113, 18, 113, 50, 28, 7, 12, 8, 16, 5, 4, 42, 24, 51, 139, 135, 133, 45, 28, 12, 16, 7, 8, 115, 52, 31, 24, 4, 126, 40, 142, 5, 41, 166, 3, 108, 110, 17, 111, 65, 32, 149, 62, 131, 105, 128, 33, 18, 45, 17, 24, 4, 40, 3, 33, 32, 107, 59, 73, 16, 15, 5, 118, 72, 76, 107, 5, 59, 4, 63, 174, 169, 168, 170, 167, 17, 8, 132, 3, 7, 125, 124, 75, 130, 42, 73, 53, 165, 164, 121, 16, 41, 45, 4, 59, 5, 8, 12, 109, 32, 28, 33, 17, 33, 58, 120, 42, 30, 72, 59, 53, 5, 108, 17, 33, 6, 117, 82, 154, 28, 5, 71, 157, 158, 159, 156, 153, 155, 4, 40, 62, 3, 72, 73, 59, 4, 12, 97, 5, 93, 92, 91, 95, 83, 94, 87, 99, 98, 89, 84, 88, 122, 90, 96, 8, 100, 74, 6, 82, 152, 17, 33, 3, 7, 75, 62, 73, 63, 86, 85, 33, 33, 7, 32, 17, 28, 62, 45, 33, 40, 45, 17, 17, 111, 28, 18, 15, 32, 81, 69, 147, 18, 29, 56, 18, 50, 18, 114, 61, 18, 7, 66, 55, 56, 79, 67, 79, 29, 78, 18, 50, 8, 24, 15, 62, 15, 32, 6, 33, 120, 72, 53, 57, 42, 32, 16, 15, 53, 118, 3, 42, 82, 8, 41, 18, 15, 28, 106, 33, 105, 32, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 59, 6, 0, 6, 0]
+    };
+    let attractionForce = 1;
+    let linkLength = 10;
+    let repulsionForce = 150;
+    let centralForce = 3;
+    let edgePruning = 100;
+  </script>
+
+  <script type="module" src="lib/scripts/graph_view.js"></script>
+
+  <script src="lib/scripts/graph_wasm.js"></script>
+
+  <script src="lib/scripts/tinycolor.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="lib/scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-view-header css-settings-manager Bottom Heading obsidian-themepocalypse is-maximized sizing-readable check-color check-bg wotc-beyond" style="--zoom-factor:1; --font-text-size:16px; --line-width:1920px; --line-width-adaptive:1920px; --file-line-width:1920px; --content-width:1440px; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+  <div class="webpage-container">
+    <div class="sidebar-left sidebar">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle">
+            <div class="toggle-background"></div>
+          </label></div>
+        <div class="tree-container file-tree mod-nav-indicator" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Estaria</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+		  <button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/';">Back to Dashboard</button>
+		  <br>
+		  <br>
+		  <button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/session-notes/session-notes.html';">Session Notes</button>
+		  <br>
+     		  <br>
+     		  <button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/world/world.html';">World</button>
+		  <br>
+		  <br>
+		  <button onclick="window.location.href = 'https://andrewme89.github.io/EstariaCampaign/npc-database.html';">NPC Database</button>
+		  </div>
+        </div>
+      </div>
+    </div>
+    <div class="document-container">
+      <div class="markdown-preview-view markdown-rendered node-insert-event" style="tab-size: 4;">
+        <style id="MJX-CHTML-styles"></style>
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header">
+		 <div class="topnav" id="myTopnav">
+  <a href="https://andrewme89.github.io/EstariaCampaign/" class="active">Back to Dashboard</a>
+  <a href="https://andrewme89.github.io/EstariaCampaign/session-notes/session-notes.html">Session Notes</a>
+  <a href="https://andrewme89.github.io/EstariaCampaign/world/world.html">World</a>
+  <a href="https://andrewme89.github.io/EstariaCampaign/npc-database.html">NPC Database</a>
+  <a href="javascript:void0;" class="icon" onclick="myFunction">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>"
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+"<script>
+function myFunction {
+  var x = document.getElementById"myTopnav";
+  if x.className === "topnav" {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+		  </div>
+          <div>
+            <pre class="frontmatter language-yaml" tabindex="0" style="display: none;"><code class="language-yaml is-loaded"><span class="token key atrule">NoteIcon</span><span class="token punctuation">:</span> SessionNote
+<span class="token key atrule">Session</span><span class="token punctuation">:</span> <span class="token number">29</span>
+<span class="token key atrule">Party</span><span class="token punctuation">:</span> The Bear Blasters 
+<span class="token key atrule">Date</span><span class="token punctuation">:</span> 19<span class="token punctuation">-</span>07<span class="token punctuation">-</span><span class="token number">2023</span>
+<span class="token key atrule">QuickNotes</span><span class="token punctuation">:</span> The party continues their fun at The Festival of the Willow and meet an old friend of Celia's
+<span class="token key atrule">LocationBuilding</span><span class="token punctuation">:</span> 
+<span class="token key atrule">WardOrRegion</span><span class="token punctuation">:</span> Suda
+<span class="token key atrule">Continent</span><span class="token punctuation">:</span> Alabi
+<span class="token key atrule">Status</span><span class="token punctuation">:</span> Not even on our radar</code><button class="copy-code-button">Copy</button></pre>
+            <div class="frontmatter-container">
+              <div class="frontmatter-container-header">
+                <div class="frontmatter-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>Metadata
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">NoteIcon</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">SessionNote</span></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">Session</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">29</span></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">Party</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">The Bear Blasters</span></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">Date</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">19-07-2023</span></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">QuickNotes</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">The party continues their fun at The Festival of the Willow and meet an old friend of Celia's</span></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">WardOrRegion</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">Suda</span></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">Continent</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">Alabi</span></div>
+              </div>
+              <div class="frontmatter-section"><span class="frontmatter-section-label">Status</span>
+                <div class="frontmatter-section-data"><span class="frontmatter-section-data-item">Not even on our radar</span></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="block-language-button"><button class="button-default  ">Back to Dashboard</button></div>
+          </div>
+          <div class="node-insert-event">
+            <h1 data-heading="Session `=this.session`" id="Session_29">Session <span class="dataview dataview-inline-query"><span>29</span></span></h1>
+          </div>
+          <div class="node-insert-event">
+            <h5 data-heading="`=this.date`" id="19-07-2023" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="dataview dataview-inline-query"><span>19-07-2023</span></span>
+            </h5>
+          </div>
+          <div>
+            <h3 data-heading="Location" id="Location" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Location
+            </h3>
+          </div>
+          <div class="node-insert-event">
+            <p><span class="dataview dataview-inline-query"><span>-</span></span>, <span class="dataview dataview-inline-query"><span>Suda</span></span>, <span class="dataview dataview-inline-query"><span>Alabi</span></span> </p>
+          </div>
+          <div>
+            <h3 data-heading="Contact" id="Contact" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Contact
+            </h3>
+          </div>
+          <div>
+            <p>N/A</p>
+          </div>
+          <div>
+            <h3 data-heading="Job" id="Job" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Job
+            </h3>
+          </div>
+          <div>
+            <p>N/A</p>
+          </div>
+          <div>
+            <h3 data-heading="Lead" id="Lead" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Lead
+            </h3>
+          </div>
+          <div>
+            <p>The Festival of the Willow </p>
+          </div>
+          <div>
+            <h2 data-heading="Key Events" id="Key_Events&nbsp;" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Key Events&nbsp;
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>The party continues through the Festival of the Willow, enjoying games and competitions as they go
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>The ring toss event is held in a colourful tent where unicorn statues are lined up along the back wall. A drow man in a vest &amp; loose-fitting pants introduces the game:
+                <ul class="has-list-bullet">
+                  <li data-line="2">
+                    <div class="list-bullet"></div>5sp p/person will grant 3 throws
+                  </li>
+                  <li data-line="3">
+                    <div class="list-bullet"></div>Contestants must throw the ring onto the unicorn horn
+                  </li>
+                  <li data-line="4">
+                    <div class="list-bullet"></div>1 ring = 1 prize
+                  </li>
+                  <li data-line="5">
+                    <div class="list-bullet"></div>3 rings = 2 prizes
+                  </li>
+                </ul>
+              </li>
+              <li data-line="6">
+                <div class="list-bullet"></div><a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> pays for <a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a>'s first round, then proceeds to miss all three of her shots
+              </li>
+              <li data-line="7">
+                <div class="list-bullet"></div><a data-href="Tabitha 💀" href="players/tabitha-💀.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Tabitha 💀.md">Tabitha 💀</a> hooks 1 ring and wins some <a data-href="Face Paint 🎨" href="party-holdings/face-paint-🎨.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Face Paint 🎨.md">Face Paint 🎨</a> with a light magical aura
+              </li>
+              <li data-line="8">
+                <div class="list-bullet"></div><a data-href="Ridley 🦁" href="players/ridley-🦁.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Ridley 🦁.md">Ridley 🦁</a> also succeeds with 1 ring, winning a small <a data-href="Spider Toy 🕷" href="party-holdings/spider-toy-🕷.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Spider Toy 🕷.md">Spider Toy 🕷</a>
+              </li>
+              <li data-line="9">
+                <div class="list-bullet"></div><a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a> cheats by using Mage Hand to guide the rings onto the unicorn horns, successfully landing all three rings and winning a replica <a data-href="Unicorn Horn Filled with Candy 🦄" href="party-holdings/unicorn-horn-filled-with-candy-🦄.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Unicorn Horn Filled with Candy 🦄.md">Unicorn Horn Filled with Candy 🦄</a> and a <a data-href="Small Bag of Translucent Dust 👝" href="party-holdings/small-bag-of-translucent-dust-👝.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Small Bag of Translucent Dust 👝.md">Small Bag of Translucent Dust 👝</a>
+              </li>
+              <li data-line="10">
+                <div class="list-bullet"></div><a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> has another turn and with some assistance from <a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a>'s Mage Hand, succeeds at hooking all three rings, winning some <a data-href="Face Paint 🎨" href="party-holdings/face-paint-🎨.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Face Paint 🎨.md">Face Paint 🎨</a>, and an <a data-href="Elegant Spoon 🥄" href="party-holdings/elegant-spoon-🥄.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Elegant Spoon 🥄.md">Elegant Spoon 🥄</a> that doesn't reflect an inverse image like a normal spoon would
+              </li>
+              <li data-line="11">
+                <div class="list-bullet"></div><a data-href="Ridley 🦁" href="players/ridley-🦁.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Ridley 🦁.md">Ridley 🦁</a> identifies the prizes, discovering that the face paints grant 1 use of Disguise Self, the <a data-href="Spider Toy 🕷" href="party-holdings/spider-toy-🕷.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Spider Toy 🕷.md">Spider Toy 🕷</a> grants 1 use of Spider Climb (which he gifts to <a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a>), there is nothing special about the unicorn horn with the candy, but the bag of translucent dust grants flying for 1 minute or 30ft. The spoon is just a spoon that doesn't reflect an inverse image like a normal spoon would
+              </li>
+              <li data-line="12">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>Ball Toss:
+                <ul class="has-list-bullet">
+                  <li data-line="13">
+                    <div class="list-bullet"></div>1sp p/person for 3 throws
+                  </li>
+                  <li data-line="14">
+                    <div class="list-bullet"></div>Toss balls into a bucket
+                  </li>
+                  <li data-line="15">
+                    <div class="list-bullet"></div>Each successful bucket wins a small plushie
+                  </li>
+                </ul>
+              </li>
+              <li data-line="16">
+                <div class="list-bullet"></div><a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a> wins an <a data-href="Elf Ranger Plushie 🎯" href="party-holdings/elf-ranger-plushie-🎯.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Elf Ranger Plushie 🎯.md">Elf Ranger Plushie 🎯</a> and a <a data-href="Tree Plushie 🎋" href="party-holdings/tree-plushie-🎋.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Tree Plushie 🎋.md">Tree Plushie 🎋</a>
+              </li>
+              <li data-line="17">
+                <div class="list-bullet"></div><a data-href="Tabitha 💀" href="players/tabitha-💀.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Tabitha 💀.md">Tabitha 💀</a> wins a <a data-href="Mushroom Plushie 🍄" href="party-holdings/mushroom-plushie-🍄.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Mushroom Plushie 🍄.md">Mushroom Plushie 🍄</a> and one shaped like a realistic heart
+              </li>
+              <li data-line="18">
+                <div class="list-bullet"></div><a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> gets a <a data-href="Star Plushie ⭐" href="party-holdings/star-plushie-⭐.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Star Plushie ⭐.md">Star Plushie ⭐</a>, an <a data-href="Avocado Plushie 🥑" href="party-holdings/avocado-plushie-🥑.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Avocado Plushie 🥑.md">Avocado Plushie 🥑</a> and a <a data-href="Ponyta-style Plushie 🐎" href="party-holdings/ponyta-style-plushie-🐎.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Ponyta-style Plushie 🐎.md">Ponyta-style Plushie 🐎</a>
+              </li>
+              <li data-line="19">
+                <div class="list-bullet"></div><a data-href="Ridley 🦁" href="players/ridley-🦁.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Ridley 🦁.md">Ridley 🦁</a> gets a <a data-href="Leonin Plushie 🦁" href="party-holdings/leonin-plushie-🦁.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Leonin Plushie 🦁.md">Leonin Plushie 🦁</a> that looks like him and a <a data-href="Bard Plushie 🎸" href="party-holdings/bard-plushie-🎸.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Bard Plushie 🎸.md">Bard Plushie 🎸</a> that looks a lot like the bard that called <a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a> a "Shit Rogue"
+              </li>
+              <li data-line="20">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>Jousting:
+                <ul class="has-list-bullet">
+                  <li data-line="21">
+                    <div class="list-bullet"></div>5sp p/person
+                  </li>
+                  <li data-line="22">
+                    <div class="list-bullet"></div>Contestants ride giant, saddled Koi fish and rush each other with softened lances
+                  </li>
+                  <li data-line="23">
+                    <div class="list-bullet"></div>Contestants must change into special chainmail armor (does not affect proficiencies, but drops AC to what it would be with no armor)
+                  </li>
+                </ul>
+              </li>
+              <li data-line="24">
+                <div class="list-bullet"></div><a data-href="Ridley 🦁" href="players/ridley-🦁.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Ridley 🦁.md">Ridley 🦁</a> vs <a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a>: <a data-href="Ridley 🦁" href="players/ridley-🦁.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Ridley 🦁.md">Ridley 🦁</a> wins, getting a small plaque with his name on it
+              </li>
+              <li data-line="25">
+                <div class="list-bullet"></div><a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> vs <a data-href="Tabitha 💀" href="players/tabitha-💀.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Tabitha 💀.md">Tabitha 💀</a>: <a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> wins, also getting a small plaque with her name engraved
+              </li>
+              <li data-line="26">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>Archery
+                <ul class="has-list-bullet">
+                  <li data-line="27">
+                    <div class="list-bullet"></div>2sp p/person for 3 shots
+                  </li>
+                  <li data-line="28">
+                    <div class="list-bullet"></div>3 targets, one short range, one midrange, one long range
+                  </li>
+                </ul>
+              </li>
+              <li data-line="29">
+                <div class="list-bullet"></div><a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> &amp; <a data-href="Tabitha 💀" href="players/tabitha-💀.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Tabitha 💀.md">Tabitha 💀</a> miss their first 3 shots
+              </li>
+              <li data-line="30">
+                <div class="list-bullet"></div><a data-href="Ridley 🦁" href="players/ridley-🦁.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Ridley 🦁.md">Ridley 🦁</a> hits the midrange target
+              </li>
+              <li data-line="31">
+                <div class="list-bullet"></div><a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a> hits all 3 and wins a <a data-href="longbow" href="party-holdings/longbow.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="#Mundane-Item" data-link-path="Party Holdings/Longbow.md">longbow</a> &amp; 10gp
+              </li>
+              <li data-line="32">
+                <div class="list-bullet"></div><a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> &amp; <a data-href="Tabitha 💀" href="players/tabitha-💀.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Tabitha 💀.md">Tabitha 💀</a> try again, unsuccessfully
+              </li>
+              <li data-line="33">
+                <div class="list-bullet"></div><a data-href="Ridley 🦁" href="players/ridley-🦁.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Ridley 🦁.md">Ridley 🦁</a> tries again and manages the first 2 targets, but misses the third
+              </li>
+              <li data-line="34">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>Riddler
+                <ul class="has-list-bullet">
+                  <li data-line="35">
+                    <div class="list-bullet"></div>5sp p/round
+                  </li>
+                  <li data-line="36">
+                    <div class="list-bullet"></div>2 correct answers wins a prize
+                  </li>
+                </ul>
+              </li>
+              <li data-line="37">
+                <div class="list-bullet"></div>The party solves 10 riddles in total
+              </li>
+              <li data-line="38">
+                <div class="list-bullet"></div><a data-href="Ridley 🦁" href="players/ridley-🦁.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Ridley 🦁.md">Ridley 🦁</a> wins a jar of flesh, which he gifts to <a data-href="Tabitha 💀" href="players/tabitha-💀.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Tabitha 💀.md">Tabitha 💀</a>
+              </li>
+              <li data-line="39">
+                <div class="list-bullet"></div><a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a> wins a <a data-href="Wooden Pan Flute 🎺" href="party-holdings/wooden-pan-flute-🎺.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Wooden Pan Flute 🎺.md">Wooden Pan Flute 🎺</a> that attracts harmless local fauna when played
+              </li>
+              <li data-line="40">
+                <div class="list-bullet"></div><a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> wins a <a data-href="Parasol 🌂" href="party-holdings/parasol-🌂.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Parasol 🌂.md">Parasol 🌂</a> decorated with mushrooms
+              </li>
+              <li data-line="41">
+                <div class="list-bullet"></div><a data-href="Kindle 🔥" href="players/kindle-🔥.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Kindle 🔥.md">Kindle 🔥</a> wins an <a data-href="Empty bag labelled 'Candy' 🍬" href="party-holdings/empty-bag-labelled-'candy'-🍬.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Empty bag labelled 'Candy' 🍬.md">Empty bag labelled 'Candy' 🍬</a>
+              </li>
+              <li data-line="42">
+                <div class="list-bullet"></div><a data-href="Tabitha 💀" href="players/tabitha-💀.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Tabitha 💀.md">Tabitha 💀</a> wins a pixie-sized faux fur winter jacket
+              </li>
+              <li data-line="43">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>Arm Wrestling:
+                <ul class="has-list-bullet">
+                  <li data-line="44">
+                    <div class="list-bullet"></div>2gp p/person
+                  </li>
+                  <li data-line="45">
+                    <div class="list-bullet"></div>15gp prize
+                  </li>
+                </ul>
+              </li>
+              <li data-line="46">
+                <div class="list-bullet"></div><a data-href="Tabitha 💀" href="players/tabitha-💀.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Tabitha 💀.md">Tabitha 💀</a> goes up against a burly dwarf man and wins despite interference from the rest of the party
+              </li>
+              <li data-line="47">
+                <div class="list-bullet"></div><a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a> seeks out bumper stickers for the cart, finding 5 and getting a sixth custom made:
+              </li>
+            </ul>
+          </div>
+          <div class="admonition-parent admonition-note-parent">
+            <div class="callout admonition admonition-note admonition-plugin is-collapsible" style="--callout-color: 68, 138, 255;" data-callout="note" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 1024 1024">
+                    <path fill="currentColor" d="M742.941 336.453l239.055-95.623V71.738zM679.966 34.422l-38.481 178.417 141.1-178.417zm302.03 487.442v-80.465l-169.087 54.81zm-321.86-160.925c-94.928-126.627-211.567-204.227-293.865-200.574h.003c-18.99.842-36.697 5.259-51.31 15.158-33.872 22.947-22.546 74.152-45.48 125.942C191.139 478.407 112.025 606.751 42.088 701.45v206.404c122.964-42.619 306.094-86.754 573.736-95.623 56.156-1.863 99.261 25.144 132.94 2.332 83.139-56.322 53.026-244.572-66.468-420.973-7.467-11.023-14.366-22.264-22.159-32.651zm-263.527-63.67c32.197-19.573 117.9 54.262 191.423 164.917s107.022 216.226 74.824 235.799c-13.235 8.045-35.514.297-62.267-19.292-38.162-38.67-78.896-88.435-117.661-145.66-38.448-56.756-69.634-112.824-91.692-162.589-10.329-37.233-9.363-64.216 5.374-73.175z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Bumper Stickers</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content">
+                <p>"If you can read this, I'm not impressed. Most people can read Common"</p>
+                <p>"Estaria is my co-pilot and we're cruising for pussy"</p>
+                <p>"I have good brakes, do you have good cover?"</p>
+                <p>"My driving scares me, too!"</p>
+                <p>"I am a power bottom"</p>
+                <p>"Shadow Assassins on-board"</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>The party heads to the dancefloor, and <a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> goes in search of shots. She purchases an entire bottle of <a data-href="Fantasy Fireball 🥃" href="party-holdings/fantasy-fireball-🥃.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Fantasy Fireball 🥃.md">Fantasy Fireball 🥃</a> that effects the party strangely<br>
+                - <a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> blows pink bubbles for 1 minute<br>
+                - <a data-href="Ridley 🦁" href="players/ridley-🦁.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Ridley 🦁.md">Ridley 🦁</a>'s spell components get moved around<br>
+                - <a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a> gets +1d4 to ability checks for an hour<br>
+                - <a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> loses her sense of smell<br>
+                - <a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a> grows disturbingly long finger and toenails, getting disadvantage on DEX checks and a 5ft reduction in speed<br>
+                - <a data-href="Ridley 🦁" href="players/ridley-🦁.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Ridley 🦁.md">Ridley 🦁</a> gets 100 gallons of water drop down from above him<br>
+                - <a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> is granted a vague look into another plane, where she can see fish floating around for the next hour<br>
+                - <a data-href="Tabitha 💀" href="players/tabitha-💀.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Tabitha 💀.md">Tabitha 💀</a> ends up throwing up rainbows<br>
+                <span alt="Rainbow Spew.gif" src="Rainbow Spew.gif" class="internal-embed media-embed image-embed is-loaded"><img alt="Rainbow Spew.gif" src="z_assets\rainbow-spew.gif"></span>
+              </li>
+              <li data-line="10">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <ul class="has-list-bullet">
+                  <li data-line="11">
+                    <div class="list-bullet"></div><a data-href="Ridley 🦁" href="players/ridley-🦁.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Ridley 🦁.md">Ridley 🦁</a> grows a beard of feathers, <em>over</em> his existing beard
+                  </li>
+                  <li data-line="12">
+                    <div class="list-bullet"></div><a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a>'s hair grows down to his knees
+                  </li>
+                  <li data-line="13">
+                    <div class="list-bullet"></div><a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> purchases 2 more bottles of the <a data-href="Fantasy Fireball 🥃" href="party-holdings/fantasy-fireball-🥃.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Fantasy Fireball 🥃.md">Fantasy Fireball 🥃</a> to drink on the road
+                  </li>
+                </ul>
+              </li>
+              <li data-line="14">
+                <div class="list-bullet"></div>Just as the party decides it's probably best to get to bed, they're made aware that the best part was yet to come, as the masses all move towards the tree at the back of <a data-href="Suda" href="world/continents/alabi/towns/suda/suda.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/Suda.md">Suda</a>
+              </li>
+              <li data-line="15">
+                <div class="list-bullet"></div><a data-href="Marius" href="world/continents/alabi/towns/suda/npcs/marius.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/NPCs/Marius.md">Marius</a> begins a drunken speech about the tree
+              </li>
+            </ul>
+          </div>
+          <div class="admonition-parent admonition-warning-parent">
+            <div class="callout admonition admonition-warning admonition-plugin is-collapsible" style="--callout-color: 254, 200, 152;" data-callout="warning" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" class="svg-inline--fa fa-book fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Quote of the Game:</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content">
+                <p>"This is a good tree. I love this tree. This tree is my best friend"</p>
+                <p>— <a data-href="Marius" href="world/continents/alabi/towns/suda/npcs/marius.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/NPCs/Marius.md">Marius</a> while drunkenly stroking the tree during his speech</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Upon completion of his speech, <a data-href="Marius" href="world/continents/alabi/towns/suda/npcs/marius.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/NPCs/Marius.md">Marius</a> bows as the tree starts sprouting leaves, and there is a burst of green. Where the leafless tree once stood, there is now a full, luscious Wisteria tree with gems dangling from the branches
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div><a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> tries to ask someone where the local tavern is, and nudges a drow woman who appears to be the only sober person in the entirety of <a data-href="Suda" href="world/continents/alabi/towns/suda/suda.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/Suda.md">Suda</a>
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>The woman introduces herself as <a data-href="Kiana 😍" href="world/continents/alabi/towns/suda/npcs/kiana-😍.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/NPCs/Kiana 😍.md">Kiana 😍</a>, and has short, black hair, a cropped blazer, a pistol, and glasses.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>After some chat back-and-forth, where the party learns that the woman knows <a data-href="Celia 🏴‍☠️" href="world/continents/tolak/towns/balor/npcs/celia-🏴‍☠️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Tolak/Towns/Balor/NPCs/Celia 🏴‍☠️.md">Celia 🏴‍☠️</a>, <a data-href="Kiana 😍" href="world/continents/alabi/towns/suda/npcs/kiana-😍.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/NPCs/Kiana 😍.md">Kiana 😍</a> leads the party back to her house, allowing us to rest and sleep-off the booze.
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>While the rest of the party falls asleep in a cuddle pile, <a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a> goes down to speak to <a data-href="Kiana 😍" href="world/continents/alabi/towns/suda/npcs/kiana-😍.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/NPCs/Kiana 😍.md">Kiana 😍</a> a little more.
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div><a data-href="Kiana 😍" href="world/continents/alabi/towns/suda/npcs/kiana-😍.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/NPCs/Kiana 😍.md">Kiana 😍</a> is well-travelled and looking to head towards the Capital of <a data-href="Alabi" href="world/continents/alabi/alabi.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Alabi.md">Alabi</a> with a party, as the road can be treacherous when travelling alone
+              </li>
+              <li data-line="6">
+                <div class="list-bullet"></div><a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a> tells her he'll ask the party how they feel about bringing her along, and heads to the room where the others are, stopping to talk to <a data-href="Twiggy 🌳" href="world/lore/twiggy-🌳.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Lore/Twiggy 🌳.md">Twiggy 🌳</a> before going to bed
+              </li>
+              <li data-line="7">
+                <div class="list-bullet"></div><a data-href="Twiggy 🌳" href="world/lore/twiggy-🌳.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Lore/Twiggy 🌳.md">Twiggy 🌳</a> says that with <a data-href="Goodie 💖" href="world/npcs/goodie-💖.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/NPCs/Goodie 💖.md">Goodie 💖</a>'s help they've determined that the party has about 2 weeks to plant him, and it will be around 6 months from him to grow to full size
+              </li>
+              <li data-line="8">
+                <div class="list-bullet"></div><a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a> promises to find a nice hill somewhere for <a data-href="Twiggy 🌳" href="world/lore/twiggy-🌳.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Lore/Twiggy 🌳.md">Twiggy 🌳</a> to be planted, and gifts him the <a data-href="Elf Ranger Plushie 🎯" href="party-holdings/elf-ranger-plushie-🎯.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Elf Ranger Plushie 🎯.md">Elf Ranger Plushie 🎯</a> he won at the festival, telling <a data-href="Twiggy 🌳" href="world/lore/twiggy-🌳.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Lore/Twiggy 🌳.md">Twiggy 🌳</a> that this way they'll always be together, even when they can't be
+              </li>
+              <li data-line="9">
+                <div class="list-bullet"></div>After putting <a data-href="Twiggy 🌳" href="world/lore/twiggy-🌳.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Lore/Twiggy 🌳.md">Twiggy 🌳</a> back in the <a data-href="Gem of Twiggy Travel 💎" href="party-holdings/gem-of-twiggy-travel-💎.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Gem of Twiggy Travel 💎.md">Gem of Twiggy Travel 💎</a>, <a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a> joins the cuddle pile for rest
+              </li>
+              <li data-line="10">
+                <div class="list-bullet"></div>😴 Long Rest 😴
+              </li>
+              <li data-line="11">
+                <div class="list-bullet"></div>In the morning, the party finds a note from <a data-href="Kiana 😍" href="world/continents/alabi/towns/suda/npcs/kiana-😍.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/NPCs/Kiana 😍.md">Kiana 😍</a> with 5 purple tablets
+              </li>
+              <li data-line="12">
+                <div class="list-bullet"></div>"Take these, it will help with the hangover"
+              </li>
+              <li data-line="13">
+                <div class="list-bullet"></div>The party takes the pills and feel better almost immediately (they're practically speed)
+              </li>
+              <li data-line="14">
+                <div class="list-bullet"></div><a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a> relays <a data-href="Kiana 😍" href="world/continents/alabi/towns/suda/npcs/kiana-😍.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/NPCs/Kiana 😍.md">Kiana 😍</a>'s desire to join the party in heading towards the capital and <a data-href="Ridley 🦁" href="players/ridley-🦁.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Ridley 🦁.md">Ridley 🦁</a> makes contact with <a data-href="Celia 🏴‍☠️" href="world/continents/tolak/towns/balor/npcs/celia-🏴‍☠️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Tolak/Towns/Balor/NPCs/Celia 🏴‍☠️.md">Celia 🏴‍☠️</a> for a little background on the stranger
+              </li>
+              <li data-line="15">
+                <div class="list-bullet"></div><a data-href="Celia 🏴‍☠️" href="world/continents/tolak/towns/balor/npcs/celia-🏴‍☠️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Tolak/Towns/Balor/NPCs/Celia 🏴‍☠️.md">Celia 🏴‍☠️</a> says that <a data-href="Kiana 😍" href="world/continents/alabi/towns/suda/npcs/kiana-😍.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/NPCs/Kiana 😍.md">Kiana 😍</a> is a "good friend...and more" and is trustworthy
+              </li>
+              <li data-line="16">
+                <div class="list-bullet"></div><a data-href="Kiana 😍" href="world/continents/alabi/towns/suda/npcs/kiana-😍.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/NPCs/Kiana 😍.md">Kiana 😍</a> makes breakfast, and <a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> hugs her from behind, stealing some bacon (to be known thereafter as "Reacharound Bacon")
+              </li>
+              <li data-line="17">
+                <div class="list-bullet"></div>The party asks a few questions over breakfast, learning that <a data-href="Kiana 😍" href="world/continents/alabi/towns/suda/npcs/kiana-😍.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/NPCs/Kiana 😍.md">Kiana 😍</a> is meeting a friend in the capital who is an acquaintance of <a data-href="Sedvioth Crofkeve 🧥" href="world/continents/alabi/sedvioth-crofkeve-🧥.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Sedvioth Crofkeve 🧥.md">Sedvioth Crofkeve 🧥</a>, and offers to teach the party Undercommon, as well as the lay of the land. She also knows where <a data-href="Dara ✨" href="world/lore/the-pantheon/old-gods/dara-✨.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Lore/The Pantheon/OLD Gods/Dara ✨.md">Dara ✨</a>'s well is in the Mushroom Forest
+              </li>
+              <li data-line="18">
+                <div class="list-bullet"></div><a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a> sends <a data-href="Poggin 🐉" href="pets-&amp;-familiars/poggin-🐉.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Pets &amp; Familiars/Poggin 🐉.md">Poggin 🐉</a> to crawl up into <a data-href="Kiana 😍" href="world/continents/alabi/towns/suda/npcs/kiana-😍.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/NPCs/Kiana 😍.md">Kiana 😍</a>'s lap and it appears that a small rivalry has begun between <a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a> &amp; <a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> as they very obviously vie for <a data-href="Kiana 😍" href="world/continents/alabi/towns/suda/npcs/kiana-😍.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/NPCs/Kiana 😍.md">Kiana 😍</a>'s attention.
+              </li>
+              <li data-line="19">
+                <div class="list-bullet"></div><a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> decides to get a pet rat
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="Outcome" id="Outcome" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Outcome
+            </h3>
+          </div>
+          <div>
+            <p>Party fucks around and finds out; with prizes!<br>
+              Met <a data-href="Kiana 😍" href="world/continents/alabi/towns/suda/npcs/kiana-😍.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Alabi/Towns/Suda/NPCs/Kiana 😍.md">Kiana 😍</a><br>
+              <a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a> gets a pet rat
+            </p>
+          </div>
+          <div>
+            <h3 data-heading="Loot" id="Loot" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Loot
+            </h3>
+          </div>
+          <div>
+            <h4 data-heading="[[Kindle 🔥]]:" id="Kindle_🔥:" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><a data-href="Kindle 🔥" href="players/kindle-🔥.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Kindle 🔥.md">Kindle 🔥</a>:
+            </h4>
+          </div>
+          <div>
+            <p><a data-href="Empty bag labelled 'Candy' 🍬" href="party-holdings/empty-bag-labelled-'candy'-🍬.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Empty bag labelled 'Candy' 🍬.md">Empty bag labelled 'Candy' 🍬</a></p>
+          </div>
+          <div>
+            <h4 data-heading="[[Marralee 😈]]:" id="Marralee_😈:" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><a data-href="Marralee 😈" href="players/marralee-😈.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Marralee 😈.md">Marralee 😈</a>:
+            </h4>
+          </div>
+          <div>
+            <p><a data-href="Face Paint 🎨" href="party-holdings/face-paint-🎨.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Face Paint 🎨.md">Face Paint 🎨</a> (1 use of disguise self)<br>
+              <a data-href="Elegant Spoon 🥄" href="party-holdings/elegant-spoon-🥄.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Elegant Spoon 🥄.md">Elegant Spoon 🥄</a> (its only ability is that it doesn't show an inverted reflection)<br>
+              <a data-href="Star Plushie ⭐" href="party-holdings/star-plushie-⭐.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Star Plushie ⭐.md">Star Plushie ⭐</a><br>
+              <a data-href="Avocado Plushie 🥑" href="party-holdings/avocado-plushie-🥑.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Avocado Plushie 🥑.md">Avocado Plushie 🥑</a><br>
+              <a data-href="Ponyta-style Plushie 🐎" href="party-holdings/ponyta-style-plushie-🐎.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Ponyta-style Plushie 🐎.md">Ponyta-style Plushie 🐎</a><br>
+              <a data-href="Parasol 🌂" href="party-holdings/parasol-🌂.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Parasol 🌂.md">Parasol 🌂</a> decorated with mushrooms<br>
+              <a data-href="Fantasy Fireball 🥃" href="party-holdings/fantasy-fireball-🥃.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Fantasy Fireball 🥃.md">Fantasy Fireball 🥃</a> x 2 bottles
+            </p>
+          </div>
+          <div>
+            <h4 data-heading="[[Miraren 🧝‍♂️]]:" id="Miraren_🧝‍♂️:" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><a data-href="Miraren 🧝‍♂️" href="players/miraren-🧝‍♂️.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Miraren 🧝‍♂️.md">Miraren 🧝‍♂️</a>:
+            </h4>
+          </div>
+          <div>
+            <p><a data-href="Spider Toy 🕷" href="party-holdings/spider-toy-🕷.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Spider Toy 🕷.md">Spider Toy 🕷</a> (1 use of Spider climb)<br>
+              Replica <a data-href="Unicorn Horn Filled with Candy 🦄" href="party-holdings/unicorn-horn-filled-with-candy-🦄.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Unicorn Horn Filled with Candy 🦄.md">Unicorn Horn Filled with Candy 🦄</a><br>
+              <a data-href="Small Bag of Translucent Dust 👝" href="party-holdings/small-bag-of-translucent-dust-👝.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Small Bag of Translucent Dust 👝.md">Small Bag of Translucent Dust 👝</a> (flying for 1 minute/30ft.)<br>
+              <a data-href="Elf Ranger Plushie 🎯" href="party-holdings/elf-ranger-plushie-🎯.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Elf Ranger Plushie 🎯.md">Elf Ranger Plushie 🎯</a><br>
+              <a data-href="Tree Plushie 🎋" href="party-holdings/tree-plushie-🎋.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Tree Plushie 🎋.md">Tree Plushie 🎋</a><br>
+              <a data-href="Longbow" href="party-holdings/longbow.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="#Mundane-Item" data-link-path="Party Holdings/Longbow.md">Longbow</a><br>
+              10gp<br>
+              <a data-href="Wooden Pan Flute 🎺" href="party-holdings/wooden-pan-flute-🎺.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Wooden Pan Flute 🎺.md">Wooden Pan Flute 🎺</a> that attracts harmless local fauna when played
+            </p>
+          </div>
+          <div>
+            <h4 data-heading="[[Ridley 🦁]]:" id="Ridley_🦁:" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><a data-href="Ridley 🦁" href="players/ridley-🦁.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Ridley 🦁.md">Ridley 🦁</a>:
+            </h4>
+          </div>
+          <div>
+            <p><a data-href="Bard Plushie 🎸" href="party-holdings/bard-plushie-🎸.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Bard Plushie 🎸.md">Bard Plushie 🎸</a><br>
+              <a data-href="Leonin Plushie 🦁" href="party-holdings/leonin-plushie-🦁.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Leonin Plushie 🦁.md">Leonin Plushie 🦁</a><br>
+              Small plaque with name engraved
+            </p>
+          </div>
+          <div>
+            <h4 data-heading="[[Tabitha 💀]]:" id="Tabitha_💀:" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><a data-href="Tabitha 💀" href="players/tabitha-💀.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Players/Tabitha 💀.md">Tabitha 💀</a>:
+            </h4>
+          </div>
+          <div>
+            <p><a data-href="Face Paint 🎨" href="party-holdings/face-paint-🎨.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Face Paint 🎨.md">Face Paint 🎨</a> (1 use of disguise self),<br>
+              <a data-href="Mushroom Plushie 🍄" href="party-holdings/mushroom-plushie-🍄.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Mushroom Plushie 🍄.md">Mushroom Plushie 🍄</a><br>
+              <a data-href="Realistic Heart Plushie 💜" href="party-holdings/realistic-heart-plushie-💜.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Realistic Heart Plushie 💜.md">Realistic Heart Plushie 💜</a><br>
+              <a data-href="Jar of Flesh-coloured Goo 🏺" href="party-holdings/jar-of-flesh-coloured-goo-🏺.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="Party Holdings/Jar of Flesh-coloured Goo 🏺.md">Jar of Flesh-coloured Goo 🏺</a>
+            </p>
+          </div>
+          <div>
+            <h3 data-heading="New Leads" id="New_Leads" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>New Leads
+            </h3>
+          </div>
+          <div>
+            <p>None</p>
+          </div>
+          <div>
+            <h3 data-heading="Quest Status" id="Quest_Status" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Quest Status
+            </h3>
+          </div>
+          <div class="node-insert-event">
+            <p><span class="dataview dataview-inline-query"><span>Not even on our radar</span></span> </p>
+          </div>
+          <div>
+            <h2 data-heading="To Do List" id="To_Do_List" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>To Do List
+            </h2>
+          </div>
+          <div>
+            <p>Nothing new</p>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-right sidebar">
+      <div class="sidebar-content"><span class="sidebar-section-header">Interactive Graph</span>
+        <div class="graph-view-placeholder">
+          <div class="graph-view-container">
+            <div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg></div>
+            <canvas id="graph-canvas" width="512px" height="512px"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
