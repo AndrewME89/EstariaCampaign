@@ -2,17 +2,6 @@ html { font-size: 16px; }
 
 @media (max-width: 550px) {
   p { font-size: 1em; }
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
 }
 
 @media (min-width: 551px) {
@@ -53,6 +42,21 @@ body {
   display: none;
 }
 
+@media (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
   .topnav.responsive a {
     float: none;
     display: block;
