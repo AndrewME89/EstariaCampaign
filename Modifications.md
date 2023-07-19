@@ -4,7 +4,7 @@
 
 ### Search this
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+	{<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">}
 
 ### Replace with this
 
@@ -45,7 +45,7 @@
  
 #### Replace with this
 
-          <div class="mod-header">
+          {<div class="mod-header">
   <!-- TopNav contents -->
 		  <div class="topnav" id="myTopnav">
   <a href="https://andrewme89.github.io/EstariaCampaign/" class="active">Back to Dashboard</a>
@@ -68,4 +68,4 @@ function myFunction() {
   }
 }
 </script>
-		  </div>
+		  </div>}
