@@ -1,3 +1,18 @@
+html { font-size: 16px; }
+
+@media (max-width: 550px) {
+  p { font-size: 1em; }
+}
+
+@media (min-width: 551px) {
+  p { font-size: 1.25rem; }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #333;
