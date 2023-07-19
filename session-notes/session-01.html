@@ -92,13 +92,15 @@
   <a href="https://andrewme89.github.io/EstariaCampaign/session-notes/session-notes.html">Session Notes</a>
   <a href="https://andrewme89.github.io/EstariaCampaign/world/world.html">World</a>
   <a href="https://andrewme89.github.io/EstariaCampaign/npc-database.html">NPC Database</a>
-  <a href="javascript:void0;" class="icon" onclick="myFunction">
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-</div><script>
-function myFunction {
-  var x = document.getElementById"myTopnav";
-  if x.className === "topnav" {
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
     x.className += " responsive";
   } else {
     x.className = "topnav";
