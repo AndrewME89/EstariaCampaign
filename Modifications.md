@@ -4,7 +4,7 @@
 
 ### Search this
 
-	{<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">}
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
 
 ### Replace with this
 
@@ -18,9 +18,9 @@
 
 ### Search this:
 
-`<div class="tree-scroll-area">`(.+)`<div class="tree-item-children"></div>`
-            `</div>`
-          `</div>`
+<div class="tree-scroll-area">`(.+)`<div class="tree-item-children"></div>
+            </div>
+          </div>
 
 ### Replace with this:
 
