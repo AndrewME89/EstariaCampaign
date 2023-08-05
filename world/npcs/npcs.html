@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>NPCs</title>
+  <base href="../../">
+  <meta id="root-path" root-path="../../">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+  <meta charset="UTF-8">
+
+
+  <link rel="stylesheet" href="lib/styles/obsidian-styles.css">
+  <link rel="stylesheet" href="lib/styles/theme.css">
+  <link rel="stylesheet" href="lib/styles/plugin-styles.css">
+  <link rel="stylesheet" href="lib/styles/snippets.css">
+  <style>
+    body.css-settings-manager {}
+
+    body.theme-light.css-settings-manager {}
+
+    body.theme-dark.css-settings-manager {}
+  </style>
+
+
+  <!-- Graph View Data -->
+  <script>
+    let nodes = {
+      "nodeCount": 220,
+      "linkCount": 573,
+      "radii": [7, 7, 6.984375, 6.930362654320987, 6.930362654320987, 6.837770061728395, 6.777006172839506, 6.777006172839506, 6.777006172839506, 6.777006172839506, 6.706597222222222, 6.706597222222222, 6.626543209876543, 6.536844135802468, 6.536844135802468, 6.4375, 6.4375, 6.328510802469136, 6.328510802469136, 6.328510802469136, 6.328510802469136, 6.328510802469136, 6.328510802469136, 6.209876543209877, 6.081597222222222, 6.081597222222222, 6.081597222222222, 6.081597222222222, 5.943672839506172, 5.943672839506172, 5.943672839506172, 5.796103395061729, 5.796103395061729, 5.796103395061729, 5.796103395061729, 5.472029320987654, 5.472029320987654, 5.472029320987654, 5.472029320987654, 5.472029320987654, 5.2955246913580245, 5.2955246913580245, 5.2955246913580245, 5.2955246913580245, 5.2955246913580245, 5.109375, 5.109375, 5.109375, 5.109375, 4.708140432098766, 4.708140432098766, 4.708140432098766, 4.708140432098766, 4.708140432098766, 4.708140432098766, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.268325617283951, 4.268325617283951, 4.268325617283951, 4.268325617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.7899305555555554, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.536265432098766, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3.27295524691358, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+      "labels": ["Session 29", "Session 23", "Session 25", "Twiggy 🌳", "Miraren 🧝‍♂️", "Ridley 🦁", "Suda", "Goodie 💖", "Kindle 🔥", "Session 13", "Session 28", "Session 10", "Tabitha 💀", "Session 21", "Session 03", "The Pale Valley", "Olo ☠", "Celia 🏴‍☠️", "The Great Black", "Session 24", "Session 11", "Session 09", "Session 06", "Session 18", "Loravor 😡", "Session 22", "Session 14", "Session 04", "Balor", "Amal 🐍", "Camp Lockheart", "Evangeline", "Tolak", "Alabi", "Session 08", "Session 27", "Session 20", "Session 17", "Session 07", "Session 05", "The Garnet Hand", "Goodie's Convenience 🛒", "Mesta 🏹", "Session 26", "Session 19", "Silda", "Session 16", "Session 12", "Session 02", "Iravek", "Alaad", "Zoran 🗡", "Kelrock 🐲", "Atlas 🌓", "Session 15", "Donelle Family", "Tani", "Fact & Fiction 📚", "Onierr 🌊", "Marralee 😈", "Jasper Family", "Sapphire", "Sedvioth Crofkeve 🧥", "Poggin 🐉", "World", "Kracka", "Sable Guards", "The Hot Candle 🍺", "The Colossal Lily Inn 🍺", "Ziliir", "Ginny 🐢", "Belzen", "Namid 🌒", "Dara ✨", "Fantasy Fireball 🥃", "Gem of Twiggy Travel 💎", "Custom Bag of Holding ⭐", "Dancing Fire", "The Dragon Aspect 💫", "By Hammer & Hand 🔨", "Zaarea", "Expresso Yourself 🍺", "Marius", "Elf Ranger Plushie 🎯", "Leonin Plushie 🦁", "Jar of Flesh-coloured Goo 🏺", "Realistic Heart Plushie 💜", "Mushroom Plushie 🍄", "Bard Plushie 🎸", "Ponyta-style Plushie 🐎", "Wooden Pan Flute 🎺", "Small Bag of Translucent Dust 👝", "Unicorn Horn Filled with Candy 🦄", "Spider Toy 🕷", "Tree Plushie 🎋", "Elegant Spoon 🥄", "Parasol 🌂", "Face Paint 🎨", "Avocado Plushie 🥑", "Star Plushie ⭐", "Empty bag labelled 'Candy' 🍬", "Recreated map, circa 2156, Constellation Dynasty 🌍", "Ancient Coin, circa 2156, Constellation Dynasty 💰", "Session 01", "Cult of the Yellow Flame", "Araou", "Akai", "Captain Bellows", "Lanryn Pimplemimple Magicman Sparklestaff III", "Gregory", "The Golden Dragon 🍺", "The Dirty Wagon 🛒", "Durand Family", "Carnis", "Garnet", "High Hall 🏫", "Iriad", "Queen Odael", "Viisa", "Sotan ⚔", "Meri 💦", "Ola", "Longbow", "Inventory Ledger, dated 2156, Constellation Dynasty 📖", "Gem of Horse Eating 💎", "Gem of Cart Consuming 💎", "Letter From V. G. T.", "The Sunset Carnival 🎪", "Sutar", "Akengenua", "Raylana", "Pirates of Golden Banner", "Any Cash, Any Time, inc 🛒", "Light Bearers", "Adelin", "Amal’s Son", "Malen", "Hammer", "Clung", "The Timid Willow Tavern 🍺", "Shrugging Carpet 🐄", "Hag’s Pot Inn 🍺", "Rotnar Reach", "Alora", "Doven", "Jules", "Unnamed 🛒", "The Grumpy Duck 🛒", "Coldstone 🔨", "The Dominion of Kagal", "Pori", "Horoscopes & Horoscopes 💫", "Kiana 😍", "Glide", "Amon", "Mark My Words 📚", "Stormy Windmill 🪓", "Bitterfrost Bar 🍺", "Metes & Bounds 🌍", "Knitwit 🛒", "Vision 6", "Vision 3", "Vision 2", "Vision 1", "Kamen", "Estiva", "Potion of Healing", "Pearl of Power 🦪", "Cloak of  Protection 👘", "Goggles of Night 🥽", "Boots of Elvenkind 👢", "Note to Orphan Kids", "Note from the Party", "Letter from Zaarea", "Letter to Celia", "Letter to the Party", "Letter to Amal", "Ludovicus 🕊", "Index", "NPC Database", "Golden Banner Jail 🚓", "The Suffered", "The Watchers", "Everette Family", "Dollar Store 🛒", "Hot Stuff 🔨", "NPCs", "Lore", "Vision 7", "Vision 4", "Vision 5", "Murhas", "Alus", "Wiest", "Lorne", "Lohika", "Hullu", "Petos", "Tempu", "Sato", "Sydan", "Perha", "Surge", "Muto", "Onnea 🍀", "Taika", "Autio", "Rayin", "Vark", "Kar", "Primas", "Iuvos", "Letter to Tabitha", "Ancient Note", "Ridley's Book 📔", "Map of Tolak", "Twiggy Storage", "Custom Bag of Holding", "Horse & Cart Storage", "Session Notes"],
+      "paths": ["session-notes/session-29.html", "session-notes/session-23.html", "session-notes/session-25.html", "world/lore/twiggy-🌳.html", "players/miraren-🧝‍♂️.html", "players/ridley-🦁.html", "world/continents/alabi/towns/suda/suda.html", "world/npcs/goodie-💖.html", "players/kindle-🔥.html", "session-notes/session-13.html", "session-notes/session-28.html", "session-notes/session-10.html", "players/tabitha-💀.html", "session-notes/session-21.html", "session-notes/session-03.html", "world/continents/tolak/towns/the-pale-valley/the-pale-valley.html", "world/lore/the-pantheon/olo-☠.html", "world/continents/tolak/towns/balor/npcs/celia-🏴‍☠️.html", "world/continents/tolak/towns/the-great-black/the-great-black.html", "session-notes/session-24.html", "session-notes/session-11.html", "session-notes/session-09.html", "session-notes/session-06.html", "session-notes/session-18.html", "world/continents/tolak/towns/the-great-black/npcs/loravor-😡.html", "session-notes/session-22.html", "session-notes/session-14.html", "session-notes/session-04.html", "world/continents/tolak/towns/balor/balor.html", "world/continents/tolak/towns/the-great-black/npcs/amal-🐍.html", "world/continents/tolak/towns/camp-lockheart/camp-lockheart.html", "world/continents/tolak/towns/the-pale-valley/npcs/evangeline.html", "world/continents/tolak/tolak.html", "world/continents/alabi/alabi.html", "session-notes/session-08.html", "session-notes/session-27.html", "session-notes/session-20.html", "session-notes/session-17.html", "session-notes/session-07.html", "session-notes/session-05.html", "world/guilds-&-organisations/the-garnet-hand.html", "world/continents/tolak/towns/the-great-black/locations/goodie's-convenience-🛒.html", "world/lore/the-pantheon/mesta-🏹.html", "session-notes/session-26.html", "session-notes/session-19.html", "world/continents/tolak/towns/balor/npcs/silda.html", "session-notes/session-16.html", "session-notes/session-12.html", "session-notes/session-02.html", "world/continents/tolak/towns/the-great-black/npcs/iravek.html", "world/continents/tolak/towns/the-great-black/npcs/alaad.html", "world/continents/tolak/towns/the-great-black/npcs/zoran-🗡.html", "world/continents/tolak/towns/the-pale-valley/npcs/kelrock-🐲.html", "world/npcs/atlas-🌓.html", "session-notes/session-15.html", "world/continents/tolak/towns/the-great-black/guilds-&-groups/donelle-family.html", "world/continents/tolak/towns/the-great-black/npcs/tani.html", "world/continents/tolak/towns/the-pale-valley/locations/fact-&-fiction-📚.html", "world/lore/the-pantheon/old-gods/onierr-🌊.html", "players/marralee-😈.html", "world/continents/tolak/towns/the-great-black/guilds-&-groups/jasper-family.html", "world/continents/tolak/towns/the-great-black/npcs/sapphire.html", "world/continents/alabi/sedvioth-crofkeve-🧥.html", "pets-&-familiars/poggin-🐉.html", "world/world.html", "world/continents/tolak/towns/balor/npcs/kracka.html", "world/continents/tolak/towns/the-great-black/guilds-&-groups/sable-guards.html", "world/continents/tolak/towns/the-great-black/locations/the-hot-candle-🍺.html", "world/continents/tolak/towns/the-pale-valley/locations/the-colossal-lily-inn-🍺.html", "world/continents/tolak/towns/camp-lockheart/npcs/ziliir.html", "world/continents/tolak/towns/camp-lockheart/npcs/ginny-🐢.html", "world/continents/alabi/towns/suda/npcs/belzen.html", "world/lore/the-pantheon/old-gods/namid-🌒.html", "world/lore/the-pantheon/old-gods/dara-✨.html", "party-holdings/fantasy-fireball-🥃.html", "party-holdings/gem-of-twiggy-travel-💎.html", "party-holdings/custom-bag-of-holding-⭐.html", "world/continents/tolak/towns/the-great-black/npcs/dancing-fire.html", "world/continents/tolak/towns/the-great-black/locations/the-dragon-aspect-💫.html", "world/continents/tolak/towns/the-great-black/locations/by-hammer-&-hand-🔨.html", "world/continents/tolak/towns/the-pale-valley/npcs/zaarea.html", "world/continents/tolak/towns/camp-lockheart/locations/expresso-yourself-🍺.html", "world/continents/alabi/towns/suda/npcs/marius.html", "party-holdings/elf-ranger-plushie-🎯.html", "party-holdings/leonin-plushie-🦁.html", "party-holdings/jar-of-flesh-coloured-goo-🏺.html", "party-holdings/realistic-heart-plushie-💜.html", "party-holdings/mushroom-plushie-🍄.html", "party-holdings/bard-plushie-🎸.html", "party-holdings/ponyta-style-plushie-🐎.html", "party-holdings/wooden-pan-flute-🎺.html", "party-holdings/small-bag-of-translucent-dust-👝.html", "party-holdings/unicorn-horn-filled-with-candy-🦄.html", "party-holdings/spider-toy-🕷.html", "party-holdings/tree-plushie-🎋.html", "party-holdings/elegant-spoon-🥄.html", "party-holdings/parasol-🌂.html", "party-holdings/face-paint-🎨.html", "party-holdings/avocado-plushie-🥑.html", "party-holdings/star-plushie-⭐.html", "party-holdings/empty-bag-labelled-'candy'-🍬.html", "party-holdings/recreated-map,-circa-2156,-constellation-dynasty-🌍.html", "party-holdings/ancient-coin,-circa-2156,-constellation-dynasty-💰.html", "session-notes/session-01.html", "world/guilds-&-organisations/cult-of-the-yellow-flame.html", "world/continents/araou/araou.html", "world/continents/akai/akai.html", "world/continents/tolak/towns/balor/npcs/captain-bellows.html", "world/continents/tolak/towns/balor/npcs/lanryn-pimplemimple-magicman-sparklestaff-iii.html", "world/continents/tolak/towns/balor/npcs/gregory.html", "world/continents/tolak/towns/balor/locations/the-golden-dragon-🍺.html", "world/continents/tolak/towns/balor/locations/the-dirty-wagon-🛒.html", "world/continents/tolak/towns/the-great-black/guilds-&-groups/durand-family.html", "world/continents/tolak/towns/the-great-black/npcs/carnis.html", "world/continents/tolak/towns/the-great-black/npcs/garnet.html", "world/continents/tolak/towns/the-great-black/locations/high-hall-🏫.html", "world/continents/tolak/towns/camp-lockheart/npcs/iriad.html", "world/continents/alabi/queen-odael.html", "world/lore/the-pantheon/viisa.html", "world/lore/the-pantheon/sotan-⚔.html", "world/lore/the-pantheon/meri-💦.html", "world/lore/the-pantheon/ola.html", "party-holdings/longbow.html", "party-holdings/inventory-ledger,-dated-2156,-constellation-dynasty-📖.html", "party-holdings/gem-of-horse-eating-💎.html", "party-holdings/gem-of-cart-consuming-💎.html", "letters/letter-from-v-g.-t..html", "world/guilds-&-organisations/the-sunset-carnival-🎪.html", "world/continents/araou/towns/sutar.html", "world/continents/akai/akengenua.html", "world/continents/tolak/raylana.html", "world/continents/tolak/towns/balor/pirates-of-golden-banner.html", "world/continents/tolak/towns/balor/locations/any-cash,-any-time,-inc-🛒.html", "world/continents/tolak/towns/the-great-black/guilds-&-groups/light-bearers.html", "world/continents/tolak/towns/the-great-black/npcs/adelin.html", "world/continents/tolak/towns/the-great-black/npcs/amal’s-son.html", "world/continents/tolak/towns/the-great-black/npcs/malen.html", "world/continents/tolak/towns/the-great-black/npcs/hammer.html", "world/continents/tolak/towns/the-great-black/npcs/clung.html", "world/continents/tolak/towns/the-great-black/locations/the-timid-willow-tavern-🍺.html", "world/continents/tolak/towns/the-great-black/locations/shrugging-carpet-🐄.html", "world/continents/tolak/towns/the-great-black/locations/hag’s-pot-inn-🍺.html", "world/continents/tolak/towns/rotnar-reach/rotnar-reach.html", "world/continents/tolak/towns/the-pale-valley/npcs/alora.html", "world/continents/tolak/towns/the-pale-valley/npcs/doven.html", "world/continents/tolak/towns/camp-lockheart/npcs/jules.html", "world/continents/tolak/towns/camp-lockheart/locations/unnamed-🛒.html", "world/continents/tolak/towns/camp-lockheart/locations/the-grumpy-duck-🛒.html", "world/continents/tolak/towns/camp-lockheart/locations/coldstone-🔨.html", "world/continents/alabi/towns/the-dominion-of-kagal/the-dominion-of-kagal.html", "world/continents/alabi/towns/pori/pori.html", "world/continents/alabi/towns/pori/merchants/horoscopes-&-horoscopes-💫.html", "world/continents/alabi/towns/suda/npcs/kiana-😍.html", "world/continents/alabi/towns/suda/npcs/glide.html", "world/continents/alabi/towns/suda/npcs/amon.html", "world/continents/alabi/towns/suda/merchants/mark-my-words-📚.html", "world/continents/alabi/towns/suda/merchants/stormy-windmill-🪓.html", "world/continents/alabi/towns/suda/merchants/bitterfrost-bar-🍺.html", "world/continents/alabi/towns/suda/merchants/metes-&-bounds-🌍.html", "world/continents/alabi/towns/suda/merchants/knitwit-🛒.html", "world/lore/visions-of-tolak/vision-6.html", "world/lore/visions-of-tolak/vision-3.html", "world/lore/visions-of-tolak/vision-2.html", "world/lore/visions-of-tolak/vision-1.html", "world/lore/the-pantheon/kamen.html", "world/lore/the-pantheon/estiva.html", "party-holdings/potion-of-healing.html", "party-holdings/pearl-of-power-🦪.html", "party-holdings/cloak-of-protection-👘.html", "party-holdings/goggles-of-night-🥽.html", "party-holdings/boots-of-elvenkind-👢.html", "letters/note-to-orphan-kids.html", "letters/note-from-the-party.html", "letters/letter-from-zaarea.html", "letters/letter-to-celia.html", "letters/letter-to-the-party.html", "letters/letter-to-amal.html", "pets-&-familiars/ludovicus-🕊.html", "index.html", "npc-database.html", "world/continents/tolak/towns/balor/locations/golden-banner-jail-🚓.html", "world/continents/tolak/towns/the-great-black/guilds-&-groups/the-suffered.html", "world/continents/tolak/towns/the-great-black/guilds-&-groups/the-watchers.html", "world/continents/tolak/towns/the-great-black/guilds-&-groups/everette-family.html", "world/continents/tolak/towns/the-pale-valley/locations/dollar-store-🛒.html", "world/continents/tolak/towns/the-pale-valley/locations/hot-stuff-🔨.html", "world/npcs/npcs.html", "world/lore/lore.html", "world/lore/visions-of-tolak/vision-7.html", "world/lore/visions-of-tolak/vision-4.html", "world/lore/visions-of-tolak/vision-5.html", "world/lore/the-pantheon/murhas.html", "world/lore/the-pantheon/alus.html", "world/lore/the-pantheon/wiest.html", "world/lore/the-pantheon/lorne.html", "world/lore/the-pantheon/lohika.html", "world/lore/the-pantheon/hullu.html", "world/lore/the-pantheon/petos.html", "world/lore/the-pantheon/tempu.html", "world/lore/the-pantheon/sato.html", "world/lore/the-pantheon/sydan.html", "world/lore/the-pantheon/perha.html", "world/lore/the-pantheon/surge.html", "world/lore/the-pantheon/muto.html", "world/lore/the-pantheon/onnea-🍀.html", "world/lore/the-pantheon/taika.html", "world/lore/the-pantheon/autio.html", "world/lore/the-pantheon/rayin.html", "world/lore/the-pantheon/vark.html", "world/lore/the-pantheon/kar.html", "world/lore/the-pantheon/primas.html", "world/lore/the-pantheon/iuvos.html", "letters/letter-to-tabitha.html", "letters/ancient-note.html", "pets-&-familiars/ridley's-book-📔.html", "service-requests/map-of-tolak.html", "service-requests/twiggy-storage.html", "service-requests/custom-bag-of-holding.html", "service-requests/horse-&-cart-storage.html", "session-notes/session-notes.html"],
+      "linkSources": [178, 126, 173, 172, 171, 102, 76, 125, 124, 75, 75, 123, 101, 103, 103, 103, 48, 48, 48, 48, 48, 48, 48, 48, 48, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 39, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 47, 47, 47, 47, 47, 47, 47, 47, 47, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 54, 54, 54, 54, 54, 54, 54, 46, 46, 46, 46, 46, 46, 46, 46, 46, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 37, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 36, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 43, 43, 43, 43, 43, 43, 43, 43, 43, 43, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 117, 71, 71, 28, 28, 17, 17, 17, 17, 17, 65, 65, 45, 45, 45, 30, 30, 30, 70, 116, 145, 55, 55, 55, 112, 112, 60, 60, 60, 66, 41, 50, 29, 29, 138, 77, 137, 49, 24, 56, 51, 51, 31, 80, 40, 40, 40, 40, 40, 58, 58, 58, 58, 58, 3, 3, 3, 3, 3, 3, 3, 160, 53, 7, 7, 7, 7, 64, 64, 64, 64, 100, 100, 99, 99, 98, 98, 97, 97, 96, 96, 95, 95, 94, 94, 93, 93, 92, 92, 91, 91, 90, 90, 89, 89, 88, 88, 87, 87, 86, 86, 85, 85, 84, 84, 74, 74, 74, 83, 83],
+      "linkTargets": [109, 17, 52, 68, 110, 15, 7, 7, 7, 7, 3, 15, 15, 141, 56, 12, 8, 66, 12, 4, 114, 61, 79, 67, 56, 56, 77, 134, 140, 28, 45, 65, 66, 115, 175, 29, 15, 67, 8, 49, 24, 55, 31, 4, 49, 24, 31, 41, 15, 7, 67, 29, 50, 77, 32, 8, 4, 12, 163, 49, 24, 31, 30, 15, 4, 8, 3, 161, 12, 16, 49, 24, 31, 12, 30, 69, 4, 81, 70, 116, 8, 3, 146, 148, 42, 32, 15, 69, 31, 30, 5, 42, 32, 8, 70, 12, 15, 162, 49, 24, 31, 15, 12, 4, 8, 5, 121, 119, 68, 30, 16, 49, 24, 31, 80, 15, 4, 57, 68, 5, 52, 8, 12, 16, 51, 18, 29, 30, 80, 31, 15, 24, 12, 41, 16, 8, 4, 5, 57, 50, 29, 55, 51, 18, 52, 63, 3, 30, 68, 52, 3, 32, 5, 12, 16, 4, 8, 57, 41, 7, 18, 60, 61, 143, 42, 144, 8, 4, 5, 122, 12, 40, 16, 18, 3, 5, 8, 51, 31, 18, 24, 52, 7, 61, 29, 76, 4, 12, 16, 42, 3, 123, 102, 57, 41, 63, 101, 76, 7, 4, 41, 71, 33, 102, 3, 17, 28, 5, 151, 150, 101, 16, 4, 57, 5, 12, 53, 7, 16, 16, 12, 4, 8, 5, 3, 53, 63, 30, 16, 5, 8, 4, 7, 30, 69, 17, 28, 18, 29, 30, 15, 127, 5, 41, 7, 70, 4, 33, 12, 16, 81, 3, 42, 18, 29, 29, 18, 5, 104, 7, 3, 30, 32, 28, 31, 31, 52, 24, 78, 5, 4, 29, 3, 12, 16, 104, 29, 24, 4, 177, 176, 51, 61, 60, 28, 50, 136, 119, 8, 106, 129, 78, 5, 113, 18, 113, 50, 28, 7, 12, 8, 16, 5, 4, 42, 24, 51, 139, 135, 133, 45, 28, 12, 16, 7, 8, 115, 52, 31, 24, 4, 126, 40, 142, 5, 41, 166, 3, 108, 110, 17, 111, 65, 32, 149, 62, 131, 105, 128, 33, 18, 45, 17, 24, 4, 40, 3, 33, 32, 107, 59, 73, 16, 15, 5, 118, 72, 76, 107, 5, 59, 4, 63, 174, 169, 168, 170, 167, 17, 8, 132, 3, 7, 125, 124, 75, 130, 42, 73, 53, 165, 164, 121, 16, 41, 45, 4, 59, 5, 8, 12, 109, 32, 28, 33, 17, 33, 58, 120, 42, 30, 72, 59, 53, 5, 108, 17, 33, 6, 117, 82, 154, 28, 5, 71, 157, 158, 159, 156, 153, 155, 4, 40, 62, 3, 72, 73, 59, 4, 12, 97, 5, 93, 92, 91, 95, 83, 94, 87, 99, 98, 89, 84, 88, 122, 90, 96, 8, 100, 74, 6, 82, 152, 17, 33, 3, 7, 75, 62, 73, 63, 86, 85, 33, 33, 7, 32, 17, 28, 62, 45, 33, 40, 45, 17, 17, 111, 28, 18, 15, 32, 81, 69, 147, 18, 29, 56, 18, 50, 18, 114, 61, 18, 7, 66, 55, 56, 79, 67, 79, 29, 78, 18, 50, 8, 24, 15, 62, 15, 32, 6, 33, 120, 72, 53, 57, 42, 32, 16, 15, 53, 118, 3, 42, 82, 8, 41, 18, 15, 28, 106, 33, 105, 32, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 6, 0, 59, 6, 0, 6, 0]
+    };
+    let attractionForce = 1;
+    let linkLength = 10;
+    let repulsionForce = 150;
+    let centralForce = 3;
+    let edgePruning = 100;
+  </script>
+
+  <script type="module" src="lib/scripts/graph_view.js"></script>
+
+  <script src="lib/scripts/graph_wasm.js"></script>
+
+  <script src="lib/scripts/tinycolor.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="lib/scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-view-header css-settings-manager Bottom Heading obsidian-themepocalypse is-maximized sizing-readable check-color check-bg wotc-beyond" style="--zoom-factor:1; --font-text-size:16px; --line-width:1920px; --line-width-adaptive:1920px; --file-line-width:1920px; --content-width:1440px; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+  <div class="webpage-container">
+    <div class="sidebar-left sidebar">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle">
+            <div class="toggle-background"></div>
+          </label></div>
+        <div class="tree-container file-tree mod-nav-indicator" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Estaria</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="letters"><span class="tree-item-title">Letters</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="letters/ancient-note.html"><span class="tree-item-title">Ancient Note</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="letters/letter-from-v-g-t..html"><span class="tree-item-title">Letter From V. G. T.</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="letters/letter-from-zaarea.html"><span class="tree-item-title">Letter from Zaarea</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="letters/letter-to-amal.html"><span class="tree-item-title">Letter to Amal</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="letters/letter-to-celia.html"><span class="tree-item-title">Letter to Celia</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="letters/letter-to-tabitha.html"><span class="tree-item-title">Letter to Tabitha</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="letters/letter-to-the-party.html"><span class="tree-item-title">Letter to the Party</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="letters/note-from-the-party.html"><span class="tree-item-title">Note from the Party</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="letters/note-to-orphan-kids.html"><span class="tree-item-title">Note to Orphan Kids</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="party-holdings"><span class="tree-item-title">Party Holdings</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/ancient-coin,-circa-2156,-constellation-dynasty-💰.html"><span class="tree-item-title">Ancient Coin, circa 2156, Constellation Dynasty 💰</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/avocado-plushie-🥑.html"><span class="tree-item-title">Avocado Plushie 🥑</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/bard-plushie-🎸.html"><span class="tree-item-title">Bard Plushie 🎸</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/boots-of-elvenkind-👢.html"><span class="tree-item-title">Boots of Elvenkind 👢</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/cloak-of-protection-👘.html"><span class="tree-item-title">Cloak of Protection 👘</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/custom-bag-of-holding-⭐.html"><span class="tree-item-title">Custom Bag of Holding ⭐</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/elegant-spoon-🥄.html"><span class="tree-item-title">Elegant Spoon 🥄</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/elf-ranger-plushie-🎯.html"><span class="tree-item-title">Elf Ranger Plushie 🎯</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/empty-bag-labelled-'candy'-🍬.html"><span class="tree-item-title">Empty bag labelled 'Candy' 🍬</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/face-paint-🎨.html"><span class="tree-item-title">Face Paint 🎨</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/fantasy-fireball-🥃.html"><span class="tree-item-title">Fantasy Fireball 🥃</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/gem-of-cart-consuming-💎.html"><span class="tree-item-title">Gem of Cart Consuming 💎</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/gem-of-horse-eating-💎.html"><span class="tree-item-title">Gem of Horse Eating 💎</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/gem-of-twiggy-travel-💎.html"><span class="tree-item-title">Gem of Twiggy Travel 💎</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/goggles-of-night-🥽.html"><span class="tree-item-title">Goggles of Night 🥽</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/inventory-ledger,-dated-2156,-constellation-dynasty-📖.html"><span class="tree-item-title">Inventory Ledger, dated 2156, Constellation Dynasty 📖</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/jar-of-flesh-coloured-goo-🏺.html"><span class="tree-item-title">Jar of Flesh-coloured Goo 🏺</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/leonin-plushie-🦁.html"><span class="tree-item-title">Leonin Plushie 🦁</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/longbow.html"><span class="tree-item-title">Longbow</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/mushroom-plushie-🍄.html"><span class="tree-item-title">Mushroom Plushie 🍄</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/parasol-🌂.html"><span class="tree-item-title">Parasol 🌂</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/pearl-of-power-🦪.html"><span class="tree-item-title">Pearl of Power 🦪</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/ponyta-style-plushie-🐎.html"><span class="tree-item-title">Ponyta-style Plushie 🐎</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/potion-of-healing.html"><span class="tree-item-title">Potion of Healing</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/realistic-heart-plushie-💜.html"><span class="tree-item-title">Realistic Heart Plushie 💜</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/recreated-map,-circa-2156,-constellation-dynasty-🌍.html"><span class="tree-item-title">Recreated map, circa 2156, Constellation Dynasty 🌍</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/small-bag-of-translucent-dust-👝.html"><span class="tree-item-title">Small Bag of Translucent Dust 👝</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/spider-toy-🕷.html"><span class="tree-item-title">Spider Toy 🕷</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/star-plushie-⭐.html"><span class="tree-item-title">Star Plushie ⭐</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/tree-plushie-🎋.html"><span class="tree-item-title">Tree Plushie 🎋</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/unicorn-horn-filled-with-candy-🦄.html"><span class="tree-item-title">Unicorn Horn Filled with Candy 🦄</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="party-holdings/wooden-pan-flute-🎺.html"><span class="tree-item-title">Wooden Pan Flute 🎺</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="pets-&amp;-familiars"><span class="tree-item-title">Pets &amp; Familiars</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="pets-&amp;-familiars/ludovicus-🕊.html"><span class="tree-item-title">Ludovicus 🕊</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="pets-&amp;-familiars/poggin-🐉.html"><span class="tree-item-title">Poggin 🐉</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="pets-&amp;-familiars/ridley's-book-📔.html"><span class="tree-item-title">Ridley's Book 📔</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="players"><span class="tree-item-title">Players</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="players/kindle-🔥.html"><span class="tree-item-title">Kindle 🔥</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="players/marralee-😈.html"><span class="tree-item-title">Marralee 😈</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="players/miraren-🧝‍♂️.html"><span class="tree-item-title">Miraren 🧝‍♂️</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="players/ridley-🦁.html"><span class="tree-item-title">Ridley 🦁</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="players/tabitha-💀.html"><span class="tree-item-title">Tabitha 💀</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="service-requests"><span class="tree-item-title">Service Requests</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="service-requests/custom-bag-of-holding.html"><span class="tree-item-title">Custom Bag of Holding</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="service-requests/horse-&amp;-cart-storage.html"><span class="tree-item-title">Horse &amp; Cart Storage</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="service-requests/map-of-tolak.html"><span class="tree-item-title">Map of Tolak</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="service-requests/twiggy-storage.html"><span class="tree-item-title">Twiggy Storage</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="session-notes"><span class="tree-item-title">Session Notes</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-01.html"><span class="tree-item-title">Session 01</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-02.html"><span class="tree-item-title">Session 02</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-03.html"><span class="tree-item-title">Session 03</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-04.html"><span class="tree-item-title">Session 04</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-05.html"><span class="tree-item-title">Session 05</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-06.html"><span class="tree-item-title">Session 06</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-07.html"><span class="tree-item-title">Session 07</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-08.html"><span class="tree-item-title">Session 08</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-09.html"><span class="tree-item-title">Session 09</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-10.html"><span class="tree-item-title">Session 10</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-11.html"><span class="tree-item-title">Session 11</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-12.html"><span class="tree-item-title">Session 12</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-13.html"><span class="tree-item-title">Session 13</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-14.html"><span class="tree-item-title">Session 14</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-15.html"><span class="tree-item-title">Session 15</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-16.html"><span class="tree-item-title">Session 16</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-17.html"><span class="tree-item-title">Session 17</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-18.html"><span class="tree-item-title">Session 18</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-19.html"><span class="tree-item-title">Session 19</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-20.html"><span class="tree-item-title">Session 20</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-21.html"><span class="tree-item-title">Session 21</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-22.html"><span class="tree-item-title">Session 22</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-23.html"><span class="tree-item-title">Session 23</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-24.html"><span class="tree-item-title">Session 24</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-25.html"><span class="tree-item-title">Session 25</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-26.html"><span class="tree-item-title">Session 26</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-27.html"><span class="tree-item-title">Session 27</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-28.html"><span class="tree-item-title">Session 28</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-29.html"><span class="tree-item-title">Session 29</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="session-notes/session-notes.html"><span class="tree-item-title">Session Notes</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="world"><span class="tree-item-title">World</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="world/continents"><span class="tree-item-title">Continents</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="world/continents/akai"><span class="tree-item-title">Akai</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/akai/akai.html"><span class="tree-item-title">Akai</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/akai/akengenua.html"><span class="tree-item-title">Akengenua</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="world/continents/alabi"><span class="tree-item-title">Alabi</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="4">
+                          <div class="tree-item-contents">
+                            <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                <path d="M3 8L12 17L21 8"></path>
+                              </svg></div><a class="tree-item-link" href="world/continents/alabi/towns"><span class="tree-item-title">Towns</span></a>
+                          </div>
+                          <div class="tree-item-children">
+                            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="5">
+                              <div class="tree-item-contents">
+                                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                    <path d="M3 8L12 17L21 8"></path>
+                                  </svg></div><a class="tree-item-link" href="world/continents/alabi/towns/pori"><span class="tree-item-title">Pori</span></a>
+                              </div>
+                              <div class="tree-item-children">
+                                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="6">
+                                  <div class="tree-item-contents">
+                                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                        <path d="M3 8L12 17L21 8"></path>
+                                      </svg></div><a class="tree-item-link" href="world/continents/alabi/towns/pori/merchants"><span class="tree-item-title">Merchants</span></a>
+                                  </div>
+                                  <div class="tree-item-children">
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/towns/pori/merchants/horoscopes-&amp;-horoscopes-💫.html"><span class="tree-item-title">Horoscopes &amp; Horoscopes 💫</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tree-item mod-tree-file" data-depth="6">
+                                  <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/towns/pori/pori.html"><span class="tree-item-title">Pori</span></a></div>
+                                  <div class="tree-item-children"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="5">
+                              <div class="tree-item-contents">
+                                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                    <path d="M3 8L12 17L21 8"></path>
+                                  </svg></div><a class="tree-item-link" href="world/continents/alabi/towns/suda"><span class="tree-item-title">Suda</span></a>
+                              </div>
+                              <div class="tree-item-children">
+                                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="6">
+                                  <div class="tree-item-contents">
+                                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                        <path d="M3 8L12 17L21 8"></path>
+                                      </svg></div><a class="tree-item-link" href="world/continents/alabi/towns/suda/merchants"><span class="tree-item-title">Merchants</span></a>
+                                  </div>
+                                  <div class="tree-item-children">
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/towns/suda/merchants/bitterfrost-bar-🍺.html"><span class="tree-item-title">Bitterfrost Bar 🍺</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/towns/suda/merchants/knitwit-🛒.html"><span class="tree-item-title">Knitwit 🛒</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/towns/suda/merchants/mark-my-words-📚.html"><span class="tree-item-title">Mark My Words 📚</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/towns/suda/merchants/metes-&amp;-bounds-🌍.html"><span class="tree-item-title">Metes &amp; Bounds 🌍</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/towns/suda/merchants/stormy-windmill-🪓.html"><span class="tree-item-title">Stormy Windmill 🪓</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="6">
+                                  <div class="tree-item-contents">
+                                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                        <path d="M3 8L12 17L21 8"></path>
+                                      </svg></div><a class="tree-item-link" href="world/continents/alabi/towns/suda/npcs"><span class="tree-item-title">NPCs</span></a>
+                                  </div>
+                                  <div class="tree-item-children">
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/towns/suda/npcs/amon.html"><span class="tree-item-title">Amon</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/towns/suda/npcs/belzen.html"><span class="tree-item-title">Belzen</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/towns/suda/npcs/glide.html"><span class="tree-item-title">Glide</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/towns/suda/npcs/kiana-😍.html"><span class="tree-item-title">Kiana 😍</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/towns/suda/npcs/marius.html"><span class="tree-item-title">Marius</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tree-item mod-tree-file" data-depth="6">
+                                  <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/towns/suda/suda.html"><span class="tree-item-title">Suda</span></a></div>
+                                  <div class="tree-item-children"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="5">
+                              <div class="tree-item-contents">
+                                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                    <path d="M3 8L12 17L21 8"></path>
+                                  </svg></div><a class="tree-item-link" href="world/continents/alabi/towns/the-dominion-of-kagal"><span class="tree-item-title">The Dominion of Kagal</span></a>
+                              </div>
+                              <div class="tree-item-children">
+                                <div class="tree-item mod-tree-file" data-depth="6">
+                                  <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/towns/the-dominion-of-kagal/the-dominion-of-kagal.html"><span class="tree-item-title">The Dominion of Kagal</span></a></div>
+                                  <div class="tree-item-children"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/alabi.html"><span class="tree-item-title">Alabi</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/queen-odael.html"><span class="tree-item-title">Queen Odael</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/alabi/sedvioth-crofkeve-🧥.html"><span class="tree-item-title">Sedvioth Crofkeve 🧥</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="world/continents/araou"><span class="tree-item-title">Araou</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="4">
+                          <div class="tree-item-contents">
+                            <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                <path d="M3 8L12 17L21 8"></path>
+                              </svg></div><a class="tree-item-link" href="world/continents/araou/towns"><span class="tree-item-title">Towns</span></a>
+                          </div>
+                          <div class="tree-item-children">
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/araou/towns/sutar.html"><span class="tree-item-title">Sutar</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/araou/araou.html"><span class="tree-item-title">Araou</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="world/continents/tolak"><span class="tree-item-title">Tolak</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="4">
+                          <div class="tree-item-contents">
+                            <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                <path d="M3 8L12 17L21 8"></path>
+                              </svg></div><a class="tree-item-link" href="world/continents/tolak/towns"><span class="tree-item-title">Towns</span></a>
+                          </div>
+                          <div class="tree-item-children">
+                            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="5">
+                              <div class="tree-item-contents">
+                                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                    <path d="M3 8L12 17L21 8"></path>
+                                  </svg></div><a class="tree-item-link" href="world/continents/tolak/towns/balor"><span class="tree-item-title">Balor</span></a>
+                              </div>
+                              <div class="tree-item-children">
+                                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="6">
+                                  <div class="tree-item-contents">
+                                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                        <path d="M3 8L12 17L21 8"></path>
+                                      </svg></div><a class="tree-item-link" href="world/continents/tolak/towns/balor/locations"><span class="tree-item-title">Locations</span></a>
+                                  </div>
+                                  <div class="tree-item-children">
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/balor/locations/any-cash,-any-time,-inc-🛒.html"><span class="tree-item-title">Any Cash, Any Time, inc 🛒</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/balor/locations/golden-banner-jail-🚓.html"><span class="tree-item-title">Golden Banner Jail 🚓</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/balor/locations/the-dirty-wagon-🛒.html"><span class="tree-item-title">The Dirty Wagon 🛒</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/balor/locations/the-golden-dragon-🍺.html"><span class="tree-item-title">The Golden Dragon 🍺</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="6">
+                                  <div class="tree-item-contents">
+                                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                        <path d="M3 8L12 17L21 8"></path>
+                                      </svg></div><a class="tree-item-link" href="world/continents/tolak/towns/balor/npcs"><span class="tree-item-title">NPCs</span></a>
+                                  </div>
+                                  <div class="tree-item-children">
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/balor/npcs/captain-bellows.html"><span class="tree-item-title">Captain Bellows</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/balor/npcs/celia-🏴‍☠️.html"><span class="tree-item-title">Celia 🏴‍☠️</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/balor/npcs/gregory.html"><span class="tree-item-title">Gregory</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/balor/npcs/kracka.html"><span class="tree-item-title">Kracka</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/balor/npcs/lanryn-pimplemimple-magicman-sparklestaff-iii.html"><span class="tree-item-title">Lanryn Pimplemimple Magicman Sparklestaff III</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/balor/npcs/silda.html"><span class="tree-item-title">Silda</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tree-item mod-tree-file" data-depth="6">
+                                  <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/balor/balor.html"><span class="tree-item-title">Balor</span></a></div>
+                                  <div class="tree-item-children"></div>
+                                </div>
+                                <div class="tree-item mod-tree-file" data-depth="6">
+                                  <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/balor/pirates-of-golden-banner.html"><span class="tree-item-title">Pirates of Golden Banner</span></a></div>
+                                  <div class="tree-item-children"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="5">
+                              <div class="tree-item-contents">
+                                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                    <path d="M3 8L12 17L21 8"></path>
+                                  </svg></div><a class="tree-item-link" href="world/continents/tolak/towns/camp-lockheart"><span class="tree-item-title">Camp Lockheart</span></a>
+                              </div>
+                              <div class="tree-item-children">
+                                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="6">
+                                  <div class="tree-item-contents">
+                                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                        <path d="M3 8L12 17L21 8"></path>
+                                      </svg></div><a class="tree-item-link" href="world/continents/tolak/towns/camp-lockheart/locations"><span class="tree-item-title">Locations</span></a>
+                                  </div>
+                                  <div class="tree-item-children">
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/camp-lockheart/locations/coldstone-🔨.html"><span class="tree-item-title">Coldstone 🔨</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/camp-lockheart/locations/expresso-yourself-🍺.html"><span class="tree-item-title">Expresso Yourself 🍺</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/camp-lockheart/locations/the-grumpy-duck-🛒.html"><span class="tree-item-title">The Grumpy Duck 🛒</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/camp-lockheart/locations/unnamed-🛒.html"><span class="tree-item-title">Unnamed 🛒</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="6">
+                                  <div class="tree-item-contents">
+                                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                        <path d="M3 8L12 17L21 8"></path>
+                                      </svg></div><a class="tree-item-link" href="world/continents/tolak/towns/camp-lockheart/npcs"><span class="tree-item-title">NPCs</span></a>
+                                  </div>
+                                  <div class="tree-item-children">
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/camp-lockheart/npcs/ginny-🐢.html"><span class="tree-item-title">Ginny 🐢</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/camp-lockheart/npcs/iriad.html"><span class="tree-item-title">Iriad</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/camp-lockheart/npcs/jules.html"><span class="tree-item-title">Jules</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/camp-lockheart/npcs/ziliir.html"><span class="tree-item-title">Ziliir</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tree-item mod-tree-file" data-depth="6">
+                                  <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/camp-lockheart/camp-lockheart.html"><span class="tree-item-title">Camp Lockheart</span></a></div>
+                                  <div class="tree-item-children"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="5">
+                              <div class="tree-item-contents">
+                                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                    <path d="M3 8L12 17L21 8"></path>
+                                  </svg></div><a class="tree-item-link" href="world/continents/tolak/towns/rotnar-reach"><span class="tree-item-title">Rotnar Reach</span></a>
+                              </div>
+                              <div class="tree-item-children">
+                                <div class="tree-item mod-tree-file" data-depth="6">
+                                  <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/rotnar-reach/rotnar-reach.html"><span class="tree-item-title">Rotnar Reach</span></a></div>
+                                  <div class="tree-item-children"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="5">
+                              <div class="tree-item-contents">
+                                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                    <path d="M3 8L12 17L21 8"></path>
+                                  </svg></div><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black"><span class="tree-item-title">The Great Black</span></a>
+                              </div>
+                              <div class="tree-item-children">
+                                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="6">
+                                  <div class="tree-item-contents">
+                                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                        <path d="M3 8L12 17L21 8"></path>
+                                      </svg></div><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/guilds-&amp;-groups"><span class="tree-item-title">Guilds &amp; Groups</span></a>
+                                  </div>
+                                  <div class="tree-item-children">
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/guilds-&amp;-groups/donelle-family.html"><span class="tree-item-title">Donelle Family</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/guilds-&amp;-groups/durand-family.html"><span class="tree-item-title">Durand Family</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/guilds-&amp;-groups/everette-family.html"><span class="tree-item-title">Everette Family</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/guilds-&amp;-groups/jasper-family.html"><span class="tree-item-title">Jasper Family</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/guilds-&amp;-groups/light-bearers.html"><span class="tree-item-title">Light Bearers</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/guilds-&amp;-groups/sable-guards.html"><span class="tree-item-title">Sable Guards</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/guilds-&amp;-groups/the-suffered.html"><span class="tree-item-title">The Suffered</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/guilds-&amp;-groups/the-watchers.html"><span class="tree-item-title">The Watchers</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="6">
+                                  <div class="tree-item-contents">
+                                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                        <path d="M3 8L12 17L21 8"></path>
+                                      </svg></div><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/locations"><span class="tree-item-title">Locations</span></a>
+                                  </div>
+                                  <div class="tree-item-children">
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/locations/by-hammer-&amp;-hand-🔨.html"><span class="tree-item-title">By Hammer &amp; Hand 🔨</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/locations/goodie's-convenience-🛒.html"><span class="tree-item-title">Goodie's Convenience 🛒</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/locations/hag’s-pot-inn-🍺.html"><span class="tree-item-title">Hag’s Pot Inn 🍺</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/locations/high-hall-🏫.html"><span class="tree-item-title">High Hall 🏫</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/locations/shrugging-carpet-🐄.html"><span class="tree-item-title">Shrugging Carpet 🐄</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/locations/the-dragon-aspect-💫.html"><span class="tree-item-title">The Dragon Aspect 💫</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/locations/the-hot-candle-🍺.html"><span class="tree-item-title">The Hot Candle 🍺</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/locations/the-timid-willow-tavern-🍺.html"><span class="tree-item-title">The Timid Willow Tavern 🍺</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="6">
+                                  <div class="tree-item-contents">
+                                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                        <path d="M3 8L12 17L21 8"></path>
+                                      </svg></div><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/npcs"><span class="tree-item-title">NPCs</span></a>
+                                  </div>
+                                  <div class="tree-item-children">
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/npcs/adelin.html"><span class="tree-item-title">Adelin</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/npcs/alaad.html"><span class="tree-item-title">Alaad</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/npcs/amal-🐍.html"><span class="tree-item-title">Amal 🐍</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/npcs/amal’s-son.html"><span class="tree-item-title">Amal’s Son</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/npcs/carnis.html"><span class="tree-item-title">Carnis</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/npcs/clung.html"><span class="tree-item-title">Clung</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/npcs/dancing-fire.html"><span class="tree-item-title">Dancing Fire</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/npcs/garnet.html"><span class="tree-item-title">Garnet</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/npcs/hammer.html"><span class="tree-item-title">Hammer</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/npcs/iravek.html"><span class="tree-item-title">Iravek</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/npcs/loravor-😡.html"><span class="tree-item-title">Loravor 😡</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/npcs/malen.html"><span class="tree-item-title">Malen</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/npcs/sapphire.html"><span class="tree-item-title">Sapphire</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/npcs/tani.html"><span class="tree-item-title">Tani</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/npcs/zoran-🗡.html"><span class="tree-item-title">Zoran 🗡</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tree-item mod-tree-file" data-depth="6">
+                                  <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-great-black/the-great-black.html"><span class="tree-item-title">The Great Black</span></a></div>
+                                  <div class="tree-item-children"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="5">
+                              <div class="tree-item-contents">
+                                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                    <path d="M3 8L12 17L21 8"></path>
+                                  </svg></div><a class="tree-item-link" href="world/continents/tolak/towns/the-pale-valley"><span class="tree-item-title">The Pale Valley</span></a>
+                              </div>
+                              <div class="tree-item-children">
+                                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="6">
+                                  <div class="tree-item-contents">
+                                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                        <path d="M3 8L12 17L21 8"></path>
+                                      </svg></div><a class="tree-item-link" href="world/continents/tolak/towns/the-pale-valley/locations"><span class="tree-item-title">Locations</span></a>
+                                  </div>
+                                  <div class="tree-item-children">
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-pale-valley/locations/dollar-store-🛒.html"><span class="tree-item-title">Dollar Store 🛒</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-pale-valley/locations/fact-&amp;-fiction-📚.html"><span class="tree-item-title">Fact &amp; Fiction 📚</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-pale-valley/locations/hot-stuff-🔨.html"><span class="tree-item-title">Hot Stuff 🔨</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-pale-valley/locations/the-colossal-lily-inn-🍺.html"><span class="tree-item-title">The Colossal Lily Inn 🍺</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="6">
+                                  <div class="tree-item-contents">
+                                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                        <path d="M3 8L12 17L21 8"></path>
+                                      </svg></div><a class="tree-item-link" href="world/continents/tolak/towns/the-pale-valley/npcs"><span class="tree-item-title">NPCs</span></a>
+                                  </div>
+                                  <div class="tree-item-children">
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-pale-valley/npcs/alora.html"><span class="tree-item-title">Alora</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-pale-valley/npcs/doven.html"><span class="tree-item-title">Doven</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-pale-valley/npcs/evangeline.html"><span class="tree-item-title">Evangeline</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-pale-valley/npcs/kelrock-🐲.html"><span class="tree-item-title">Kelrock 🐲</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                    <div class="tree-item mod-tree-file" data-depth="7">
+                                      <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-pale-valley/npcs/zaarea.html"><span class="tree-item-title">Zaarea</span></a></div>
+                                      <div class="tree-item-children"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tree-item mod-tree-file" data-depth="6">
+                                  <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/towns/the-pale-valley/the-pale-valley.html"><span class="tree-item-title">The Pale Valley</span></a></div>
+                                  <div class="tree-item-children"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/raylana.html"><span class="tree-item-title">Raylana</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/continents/tolak/tolak.html"><span class="tree-item-title">Tolak</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="world/guilds-&amp;-organisations"><span class="tree-item-title">Guilds &amp; Organisations</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="world/guilds-&amp;-organisations/cult-of-the-yellow-flame.html"><span class="tree-item-title">Cult of the Yellow Flame</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="world/guilds-&amp;-organisations/the-garnet-hand.html"><span class="tree-item-title">The Garnet Hand</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="world/guilds-&amp;-organisations/the-sunset-carnival-🎪.html"><span class="tree-item-title">The Sunset Carnival 🎪</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="world/lore"><span class="tree-item-title">Lore</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="world/lore/the-pantheon"><span class="tree-item-title">The Pantheon</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="4">
+                          <div class="tree-item-contents">
+                            <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                <path d="M3 8L12 17L21 8"></path>
+                              </svg></div><a class="tree-item-link" href="world/lore/the-pantheon/old-gods"><span class="tree-item-title">OLD Gods</span></a>
+                          </div>
+                          <div class="tree-item-children">
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/old-gods/dara-✨.html"><span class="tree-item-title">Dara ✨</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/old-gods/namid-🌒.html"><span class="tree-item-title">Namid 🌒</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                            <div class="tree-item mod-tree-file" data-depth="5">
+                              <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/old-gods/onierr-🌊.html"><span class="tree-item-title">Onierr 🌊</span></a></div>
+                              <div class="tree-item-children"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/alus.html"><span class="tree-item-title">Alus</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/autio.html"><span class="tree-item-title">Autio</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/estiva.html"><span class="tree-item-title">Estiva</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/hullu.html"><span class="tree-item-title">Hullu</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/iuvos.html"><span class="tree-item-title">Iuvos</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/kamen.html"><span class="tree-item-title">Kamen</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/kar.html"><span class="tree-item-title">Kar</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/lohika.html"><span class="tree-item-title">Lohika</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/lorne.html"><span class="tree-item-title">Lorne</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/meri-💦.html"><span class="tree-item-title">Meri 💦</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/mesta-🏹.html"><span class="tree-item-title">Mesta 🏹</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/murhas.html"><span class="tree-item-title">Murhas</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/muto.html"><span class="tree-item-title">Muto</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/ola.html"><span class="tree-item-title">Ola</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/olo-☠.html"><span class="tree-item-title">Olo ☠</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/onnea-🍀.html"><span class="tree-item-title">Onnea 🍀</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/perha.html"><span class="tree-item-title">Perha</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/petos.html"><span class="tree-item-title">Petos</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/primas.html"><span class="tree-item-title">Primas</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/rayin.html"><span class="tree-item-title">Rayin</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/sato.html"><span class="tree-item-title">Sato</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/sotan-⚔.html"><span class="tree-item-title">Sotan ⚔</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/surge.html"><span class="tree-item-title">Surge</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/sydan.html"><span class="tree-item-title">Sydan</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/taika.html"><span class="tree-item-title">Taika</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/tempu.html"><span class="tree-item-title">Tempu</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/vark.html"><span class="tree-item-title">Vark</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/viisa.html"><span class="tree-item-title">Viisa</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/the-pantheon/wiest.html"><span class="tree-item-title">Wiest</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="world/lore/visions-of-tolak"><span class="tree-item-title">Visions of Tolak</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/visions-of-tolak/vision-1.html"><span class="tree-item-title">Vision 1</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/visions-of-tolak/vision-2.html"><span class="tree-item-title">Vision 2</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/visions-of-tolak/vision-3.html"><span class="tree-item-title">Vision 3</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/visions-of-tolak/vision-4.html"><span class="tree-item-title">Vision 4</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/visions-of-tolak/vision-5.html"><span class="tree-item-title">Vision 5</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/visions-of-tolak/vision-6.html"><span class="tree-item-title">Vision 6</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/visions-of-tolak/vision-7.html"><span class="tree-item-title">Vision 7</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/lore.html"><span class="tree-item-title">Lore</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="world/lore/twiggy-🌳.html"><span class="tree-item-title">Twiggy 🌳</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="world/npcs"><span class="tree-item-title">NPCs</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="world/npcs/atlas-🌓.html"><span class="tree-item-title">Atlas 🌓</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="world/npcs/goodie-💖.html"><span class="tree-item-title">Goodie 💖</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="world/npcs/npcs.html"><span class="tree-item-title">NPCs</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="world/world.html"><span class="tree-item-title">World</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-file" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="index.html"><span class="tree-item-title">Index</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+            <div class="tree-item mod-tree-file" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="npc-database.html"><span class="tree-item-title">NPC Database</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="document-container">
+      <div class="markdown-preview-view markdown-rendered node-insert-event" style="tab-size: 4;">
+        <style id="MJX-CHTML-styles"></style>
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <div data-callout-metadata="|text-Center bg-c-blue" data-callout-fold="" data-callout="metadata" class="callout">
+              <div class="callout-title">
+                <div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-layers">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg></div>
+                <div class="callout-title-inner">NPCs</div>
+              </div>
+              <div class="callout-content">
+                <div data-callout-metadata="dataview 4" data-callout-fold="" data-callout="cards" class="callout">
+                  <div class="callout-title">
+                    <div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-layout-dashboard">
+                        <rect x="3" y="3" width="7" height="9"></rect>
+                        <rect x="14" y="3" width="7" height="5"></rect>
+                        <rect x="14" y="12" width="7" height="9"></rect>
+                        <rect x="3" y="16" width="7" height="5"></rect>
+                      </svg></div>
+                    <div class="callout-title-inner"><strong>NPCs</strong></div>
+                  </div>
+                  <div class="callout-content">
+                    <div class="block-language-dataview node-insert-event">
+                      <table class="dataview table-view-table">
+                        <thead class="table-view-thead">
+                          <tr class="table-view-tr-header">
+                            <th class="table-view-th"><span>Art</span><span class="dataview small-text">3</span></th>
+                            <th class="table-view-th"><span>Title</span></th>
+                            <th class="table-view-th"><span>QuickNotes</span></th>
+                            <th class="table-view-th"><span>Space</span></th>
+                            <th class="table-view-th"><span>Location</span></th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-view-tbody">
+                          <tr>
+                            <td><img alt="z_assets/Atlas.png" src="z_assets\atlas.png"></td>
+                            <td><span><span style="display: block; border-bottom: 2px solid var(--accent); text-align: center; margin-bottom: 5px;"><a data-tooltip-position="top" aria-label="World/NPCs/Atlas 🌓.md" data-href="World/NPCs/Atlas 🌓.md" href="world/npcs/atlas-🌓.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/NPCs/Atlas 🌓.md">Atlas 🌓</a></span></span></td>
+                            <td><span>🔹 The Moon God</span></td>
+                            <td><span>
+                                <hr>
+                              </span></td>
+                            <td><span>World</span></td>
+                          </tr>
+                          <tr>
+                            <td><img alt="z_assets/PlaceholderImage.png" src="z_assets\placeholderimage.png"></td>
+                            <td><span><span style="display: block; border-bottom: 2px solid var(--accent); text-align: center; margin-bottom: 5px;"><a data-tooltip-position="top" aria-label="World/NPCs/Goodie 💖.md" data-href="World/NPCs/Goodie 💖.md" href="world/npcs/goodie-💖.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/NPCs/Goodie 💖.md">Goodie 💖</a></span></span></td>
+                            <td><span>🔹 Owner of <a data-href="🛒 Goodie's Convenience" href="🛒 Goodie's Convenience" class="internal-link" target="_self" rel="noopener">🛒 Goodie's Convenience</a><br>🔹 Goodie knows all</span></td>
+                            <td><span>
+                                <hr>
+                              </span></td>
+                            <td><span><a data-href="The Great Black" href="world/continents/tolak/towns/the-great-black/the-great-black.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Tolak/Towns/The Great Black/The Great Black.md">The Great Black</a><br><a data-href="The Pale Valley" href="world/continents/tolak/towns/the-pale-valley/the-pale-valley.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Tolak/Towns/The Pale Valley/The Pale Valley.md">The Pale Valley</a><br><a data-href="Balor" href="world/continents/tolak/towns/balor/balor.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Tolak/Towns/Balor/Balor.md">Balor</a> (under construction)<br>World</span></td>
+                          </tr>
+                          <tr>
+                            <td><img alt="z_assets/Loravor.png" src="z_assets\loravor.png"></td>
+                            <td><span><span style="display: block; border-bottom: 2px solid var(--accent); text-align: center; margin-bottom: 5px;"><a data-tooltip-position="top" aria-label="World/Continents/Tolak/Towns/The Great Black/NPCs/Loravor 😡.md" data-href="World/Continents/Tolak/Towns/The Great Black/NPCs/Loravor 😡.md" href="world/continents/tolak/towns/the-great-black/npcs/loravor-😡.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Tolak/Towns/The Great Black/NPCs/Loravor 😡.md">Loravor 😡</a></span></span></td>
+                            <td><span>🔹 Originally gave the party the escort job<br>🔹 Father of <a data-href="Evangeline" href="world/continents/tolak/towns/the-pale-valley/npcs/evangeline.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Tolak/Towns/The Pale Valley/NPCs/Evangeline.md">Evangeline</a><br>🔹 Owner of <a data-href="💫 The Dragon Aspect" href="💫 The Dragon Aspect" class="internal-link" target="_self" rel="noopener">💫 The Dragon Aspect</a><br>🔹 Possibly charmed <a data-href="Alaad" href="world/continents/tolak/towns/the-great-black/npcs/alaad.html" class="internal-link data-link-icon data-link-icon-after data-link-text" target="_self" rel="noopener" data-link-tags="" data-link-path="World/Continents/Tolak/Towns/The Great Black/NPCs/Alaad.md">Alaad</a><br>🔹 Is currently on trial for his crimes<br>🔹 Is currently AWOL</span></td>
+                            <td><span>
+                                <hr>
+                              </span></td>
+                            <td><span>World</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p><br><br><br><br><br></p>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-right sidebar">
+      <div class="sidebar-content"><span class="sidebar-section-header">Interactive Graph</span>
+        <div class="graph-view-placeholder">
+          <div class="graph-view-container">
+            <div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg></div>
+            <canvas id="graph-canvas" width="512px" height="512px"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
