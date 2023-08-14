@@ -2,11 +2,10 @@
 
 ## To Do
 
-
-- [ ] Create a new button and nav bar menu option for "Player Holdings" as it will be moving to a solo page
 - [ ] Get a copy of the map and some info as to where the party has been (and what Glide marked on the Alabi map) for map pins, follow this tutorial https://leafletjs.com/examples/quick-start/
 - [ ] Update template files to include call-out boxes for Quote of the Game, Lore, Quotes & Encounters - rather delete them than have to go back and add them
 - [ ] Add "Quote of the Game" call-out box where necessary (look back through notes if needed)
+- [x] ~~Create a new button and nav bar menu option for "Player Holdings" as it will be moving to a solo page~~
 - [x] ~~Update Template files to include the "Back to Dashboard" button for future additions~~
 - [x] ~~Look into mobile-friendly functionality (read through the below sites to see if anything works)~~
   - [x] ~~https://www.thesitewizard.com/css/mobile-friendly-responsive-design.shtml~~
