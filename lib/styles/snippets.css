@@ -2941,11 +2941,6 @@ body .wotc-beyond.theme-dark .HyperMD-hr-bg {
 
 
 /* --- Obsidian.css --- */  
- .markdown-preview-view img {
-  max-width: 200px;
-  max-height: 200px;
-}
-
 .admonition-tavern > p:before {
     content: "Tavern:";
     font-weight: bold;
